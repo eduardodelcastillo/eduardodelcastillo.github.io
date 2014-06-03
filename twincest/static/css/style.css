@@ -988,7 +988,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   transform-style: preserve-3d;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url("/startup/common-files/img/header/profile5.jpg");
+  background-image: url("startup/common-files/img/header/profile5.jpg");
   opacity: 80;
   filter: alpha(opacity=10000);
   opacity: .80;
@@ -1002,7 +1002,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 
 */
 .header-1-sub .pt-page-2 .background {
-  background-image: url("/startup/common-files/img/header/profile8bw.jpg");
+  background-image: url("startup/common-files/img/header/profile8bw.jpg");
   opacity: 80;
   filter: alpha(opacity=10000);
   opacity: 0.8;
@@ -1010,7 +1010,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-3 .background {
-  background-image: url("/startup/common-files/img/header/profile6bw.jpg");
+  background-image: url("startup/common-files/img/header/profile6bw.jpg");
   opacity: 80;
   filter: alpha(opacity=7500);
   opacity: 0.80;
@@ -1262,7 +1262,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .content-13.subscribe-form.bg-turquoise {
   background-image: 
-  url("/startup/common-files/img/projects/profile7bw.jpg");
+  url("startup/common-files/img/projects/profile7bw.jpg");
   opacity: 30;
   background-position: 100% 80%;
 
@@ -1639,7 +1639,7 @@ text-align: center;
  * Copntact 4 stylesheet  
  * */
 .contacts-4 {
-  background: #DAA520 url('/startup/common-files/img/footer/sydneymapbw.jpg') 50% 50% no-repeat;
+  background: #DAA520 url('startup/common-files/img/footer/sydneymapbw.jpg') 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
