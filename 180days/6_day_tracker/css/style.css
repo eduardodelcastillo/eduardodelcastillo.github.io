@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: Tahoma, sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+#day_container {
+  width: 740px;
+  margin: 0 auto;
+}
+.day {
+  width: 100px;
+  height: 100px;
+  background-color: #B00385;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;  
+  border: 0px 0px 0px 0px;
+}
+.day h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#day_display {
+  height: 150px;
+  width: 100%;
+  background-color: #07CE00;
+  text-align: center;
+  padding: 0px 0px 0px 0px;  
+  border: 0px 0px 0px 0px;
+}
+#day_display h1 {
+  font-size: 2.4em;
+  margin-top: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+#date {
+  font-size: 1.5em;
+  margin-top: -20px;
+  letter-spacing: 0.5em;
+  color: gray;
+}
+
+#bar_day_tracker {
+  height: 300px;
+  width: 100px;
+  background-color: #07CE00;
+}
+
+#bar_day_tracker h2 {
+  font-weight: bold;
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 250px;
+}
