@@ -31,7 +31,7 @@ $(document).ready( function() {
 
       // communicate clicked door and open door
       $('#deal_desc').html('You have chosen Door ' + currDoor +'!<br />Behold! Door ' + openDoor + ' has been opened that shows something that looks horrible!');
-      $('#choose_h3').html('Would you like to switch or stay?');
+      $('#choose_h3').html('Would you like to switch or stay?<br>(Click same door to stay or the other door to switch.)');
 
     // if currDoor is set, we are on the second click
     } else {
@@ -53,9 +53,19 @@ $(document).ready( function() {
       if(prizeWin == 1) {
         $('#choose_h3').replaceWith("<h3 class='win'>Congratulations! It contains the AWESOME thing! <br/> Here is your prize!<h3>");
         $('.img_wrapper').html("<iframe width='560' height='315' src='//www.youtube.com/embed/IkHzvhsMGhI?list=PL31AE9DE086F06DCD' frameborder='0' allowfullscreen></iframe>");
+        $('#play_again').css('visibility','visible');
+        $('#play_again').click(function() {
+          //console.log('You clicked the button nice!')
+          location.reload();
+        });        
       } else {
         $('#choose_h3').html('Oh no! You\'ve chosen a horrible thing!');
-          $('.img_wrapper').html("<iframe width='560' height='315' src='//www.youtube.com/embed/pNg8S_pqpQU' frameborder='0' allowfullscreen></iframe>");
+        $('.img_wrapper').html("<iframe width='560' height='315' src='//www.youtube.com/embed/pNg8S_pqpQU' frameborder='0' allowfullscreen></iframe>");
+        $('#play_again').css('visibility','visible');
+        $('#play_again').click(function() {
+          //console.log('You clicked the button horrible!')          
+          location.reload();
+        });          
       }
 
     }
