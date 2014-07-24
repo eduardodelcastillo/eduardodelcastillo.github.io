@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+}
+
+#container {
+  width: 700px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height:70px;
+  width: 70px;
+  background-color: gray;
+  display: inline-block;
+  margin: -4px -4px 0 0;
+}
+
+.box:hover {
+     -moz-box-shadow: inset 0px 0px 10px white;
+  -webkit-box-shadow: inset 0px 0px 10px white;
+          box-shadow: inset 0px 0px 10px white;   
+}
