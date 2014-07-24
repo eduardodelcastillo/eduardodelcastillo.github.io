@@ -1,0 +1,38 @@
+h1 {
+  font-size: 2em;
+  font-family: monospace, sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: monospace, sans-serif;  
+}
+
+header p {
+  text-align: center;
+}
+
+#container {
+  width: 800px;
+  height: 3000px;
+  position: relative;
+}
+
+#message1 {
+  position: fixed;
+  width: 800px;
+  margin-left: 50px;
+  top: 350px;
+
+}
+
+#message2 {
+  position: absolute;
+  width: 800px;
+  margin-left: 69px;
+  top: 2000px;
+}
+
+#message2 p {
+  margin-left: 580px;
+}
