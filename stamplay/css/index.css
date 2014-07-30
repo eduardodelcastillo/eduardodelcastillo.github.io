@@ -1,0 +1,481 @@
+* { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;  
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 1em/1.38 Roboto;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, p, a{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #3f497f;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.btn {
+display: inline-block;
+margin-bottom: 0;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.gray_bg {
+  background-color: #DEECEF;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  display: block;
+  z-index: 30;
+  min-width: 100%;
+  height: 50px;
+  background-color: #404b82;
+  border: 0 solid transparent;
+}
+
+.container {
+  width: 970px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo_header {
+  height: 50px;
+  float: left;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: -6px;
+}
+
+.navbar_brand {
+  margin-left: -15px;
+  height: 50px;
+  float: left;
+  line-height: 20px;
+}
+
+#stamplay_logo {
+  margin-top: 7px;
+  vertical-align: middle;
+  border: 0;
+  width: 100px;
+  min-height: 19px;
+}
+
+#nav_bar {
+  height: 50px;
+}
+
+.nav {
+  padding-left: 0;
+  list-style: none;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.nav_main_menu {
+  float: left;
+  margin: 0;
+}
+
+.nav_main_menu li {
+  width: 95px;
+  text-align: center;
+  list-style: none;
+  float: left;
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.nav_main_menu li a {
+  color: white;
+  font-size: 14px;
+}
+
+.nav li a:hover {
+  color: #008CE1;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav_bar_right {
+  float: right!important;
+}
+.nav_bar_right li {
+  text-align: center;
+  list-style: none;
+  float: left;
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.nav_bar_right:last-child {
+  margin-right: -15px;
+}
+
+.nav li>a {
+height: 60px;
+padding-top: 20px;
+font-size: 14px;
+font-weight: 300;
+color: #fff;
+}
+
+.nav .contact_number {
+border: 1px solid #a0a5c1;
+border-radius: 5px;
+padding: 7px;
+color: #a0a5c1;
+}
+
+/*SLIDER*/
+/* where slider will be located */
+
+#stamplay {
+  font-size: 4em;
+  display: inline;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+  z-index: 25;
+  font-weight: bolder;
+  top: 75px;
+  letter-spacing: 8px;
+}
+/* Fadein Effect for the Slider Description */
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+}
+.fadeIn{
+    opacity:0;
+}
+.fadeIn.go { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+.slower{
+     -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+#slider_desc {
+  font-size: 40px;
+  top: 180px;
+  position: absolute;
+  z-index: 26;
+  font-weight: lighter;
+  width: 80%;
+  left: 10%;
+  color: white;
+}
+
+.slider_container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 460px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  background-color: #3f497f;    
+}
+
+#pic_container {
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 13;
+  width: 100%;
+  min-height: 594px;
+  background: linear-gradient(45deg, rgba(63,73,127,0.9), rgba(63,73,127,0.2)), url(../images/stam4.jpg) no-repeat center center scroll;
+  background-size: cover;
+}
+
+.btn-primary {
+height: 50px;
+width: 160px;
+font-size: 20px;
+font-weight: 300;
+letter-spacing: 1px;
+border: solid 1px #404b82;
+}
+
+.btn-green {
+line-height: 39px;
+background-color: #41b95a;
+border: solid 1px #00a122;
+color: #fff;
+}
+
+
+#learn_btn {
+  margin-top: 475px;
+  font-size: 20px;
+  background-color: #00aeef;
+  border-color: #00a5ed;
+}
+
+#learn_btn:hover {
+  background-color: #00d7ed;
+}
+/* ==========================================================================*/
+/* New Descriptions Content */
+/* ==========================================================================*/
+.new_description {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  padding: 1em 1em 1em 1em;
+  margin-top: 50px;
+  vertical-align: middle;
+}
+
+.new_description h3 {
+  color: #3f497f;
+  font-size: 1.2em;
+}
+.new_description p {
+  font-weight: lighter;
+}
+
+.newdesc_container {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  z-index: 120;
+}
+
+.visual_container {
+  width: 45%;
+  min-height: 280px;
+  position: relative;
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+#visual2_subcont {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.visual_sub {
+  width: 45%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#desc_section_1, #desc_section_3 {
+  background-color: white;
+}
+
+#ndc1 {
+  width: 50%;
+  min-height: 200px;
+  top: -40px;
+}
+
+#ndc1 h3 {
+  padding-bottom: 100px;
+}
+
+#ndc2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 2em 0.5em 2em 0.5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ndc2sub_a {
+  left: -10px;
+}
+#ndc2sub_b {
+  top: -23px;
+  left: 30px;
+}
+#ndc3 {
+  top: -50px;
+  left: 80px;
+}
+
+
+
+/* ==========================================================================*/
+/* How It Works */
+/* ==========================================================================*/
+#how_it_works {
+  padding: 1em 0.5em 1em 0.5em;
+  display: block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+
+#how_it_works h2 {
+  text-align: center;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+#how_it_works p {
+  font-weight: lighter;
+}
+
+#big_how_container {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.how_container {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+
+.how_container h3, .how_container p {
+  text-align: left;
+}
+
+.how_img_cont {
+  width: 243px;
+  height: 90px;
+}
+
+/* ==========================================================================*/
+/* Completed Projects Using Stamplay */
+/* ==========================================================================*/
+
+#completed_projects h2 {
+  text-align: center;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+/* ==========================================================================*/
+/* Try It Now */
+/* ==========================================================================*/
+
+#try_it {
+  background-color: #3f497f;
+  height: 204px;
+}
+
+#try_container {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: url(/images/png.png);
+  background-size: cover;
+  background-repeat: no-repeat;  
+  vertical-align: middle;  
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#try_it_desc {
+  display: inline-block;
+  position: relative;
+  width: 66.67%;
+  top: 40px;
+}
+
+#try_it_desc h2, #try_it_desc p {
+  color: white;
+  font-weight: 300;
+}
+
+#start_now_btn {
+  display: inline-block;
+  position: relative;
+}
+
+#start_now_btn:hover {
+  background-color: #00A122;
+}
+
+/* ==========================================================================*/
+/* Footer */
+/* ==========================================================================*/
+
+footer {
+  height: 232px;
+}
+
+footer img {
+  width: 95%;
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+}
