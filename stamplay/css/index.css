@@ -433,7 +433,7 @@ color: #fff;
   margin-top: 25px;
   padding-top: 30px;
   padding-bottom: 50px;
-  background-image: url(/images/png.png);
+  background-image: url(../images/png.png);
   background-size: cover;
   background-repeat: no-repeat;  
   vertical-align: middle;  
