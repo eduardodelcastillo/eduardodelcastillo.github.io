@@ -1,0 +1,31 @@
+<html ng-app="weatherApp">
+<head>
+  <title>Weather App</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- {{232/21}}  -->
+  <header>
+    <h1> Weather App</h1>
+  </header>
+
+  <div id="container" ng-controller="weatherController">
+    <form name="form" ng-submit="getWeather($event)">
+      <input type="text" ng-model="city_name" placeholder="What is the city?...">
+    </form>
+
+    <br/>
+    {{fahren | number: (1) }} <span ng-bind-html="tempFormat"></span>
+    &nbsp &nbsp
+    {{celsius | number: (0)}} <span ng-bind-html="tempFormat2"></span>
+    <br/>
+    {{main}} <div ng-show="info">{{humidity}}</div>
+    <br/>
+
+  </div>
+
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/weatherController.js"></script>  
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* style.css */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#container {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}

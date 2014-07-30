@@ -27,8 +27,10 @@
         <li><a href="#">About   </a></li>
       </ul>
       <ul class="nav nav_bar_right">
+   <!--     
         <li><a><span class="contact_number">Talk to us: +44 20 3239 2899</a></span></li>
-        <li><a href="#" id="login_btn">Login</a></li>
+    -->
+        <li><a href="#" id="login_btn">Login / Sign Up</a></li>
       </ul>
     </div>
   </div>
@@ -37,36 +39,111 @@
 
 <!--Slider Section-->
 <div class="slider_container">
-  <h1 id="stamplay">stamplay</h1>
-  <h2 id="slider_desc" class="animated fadeIn slower">Skip the code. <br> Connect backend magic to frontend design.</h2>
+  <!-- <h1 id="stamplay">stamplay</h1> -->
+  <h2 id="slider_desc">Skip the code. <br> Connect backend magic to frontend design.</h2>
   <div id="pic_container">
-    <a id="start_now_btn" class="btn btn-primary btn-green" href="#">Start now</a>
+    <!--<picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="images/stam4.jpg">
+        <img src="images/stam4.jpg">
+      </picture> -->
+    <a id="learn_btn" class="btn btn-primary btn-green" href="#">Learn more</a>
   </div>
 </div>
 
-<!--Here's How It Works Section-->
-<section id="section_1">
-  <p class="text_1">1. Start with the backend and choose the APIs you need.</p>
+<!-- More Description Section -->
+<section id="desc_section_1" class="new_description">
+  <div id="ndc1" class="newdesc_container">
+    <h3>Save time and money in backend development</h3>
+    <p>Stamplay allows you to integrate APIs without having to code the backend.</br> </br> </br> Quickly connect apps using our point-and-click interface.</p>
+  </div>
+  <div id="visual1" class="visual_container">
+    <img src="../images/visual1.png">
+  </div>  
+</section>
+<section id="desc_section_2" class="new_description gray_bg">
+  <div id="ndc2">
+    <h3>Automate backend tasks with simple logic</h3>
+    <p>Configure workflow rules such as:</p>
+  </div>
+  <div id="visual2_subcont">
+    <div id="ndc2sub_a" class="visual_sub">
+      <img src="../images/visual2a.png">
+      <p>"When a user submits the form, add him to my Mailchimp list."</p>
+    </div>
+    <div id="ndc2sub_b" class="visual_sub">
+      <img src="../images/visual2b.png">
+      <p>"When a user signs up, send him an email."</p>
+    </div>  
+  </div>
+</section>
+<section id="desc_section_3" class="new_description">
+  <div id="visual3" class="visual_container"> 
+    <img src="../images/visual3.png">
+  </div>
+  <div id="ndc3" class="newdesc_container"> 
+    <h3>Easily manage the data you collect</h3>
+    <img src="../images/visual3b.png">
+    <p>Our admin view gives you immediate access to your data without having to go into complicated databases.</p>
+  </div>
 </section>
 
-  <div class="section_2"></div>
-  <p class="text_2">2. Add a task. Choose an action and a result.</p>
-  <div class="section_3"></div>
-  <p class="text_3">3. Use some magic! Connect the backend to the frontend. Copy and paste the generated code to complete the functionality.</p>
-  <p class="text_4">&lt;div data-stamplay-widget=" "&gt;&lt;/div&gt;</p>
-  <div class="section_4"></div>
-  <p class="text_5">4. Design your frontend. Frame and style your application with HTML/CSS</p>
-  <div class="section_5"></div>
-  <div class="section_6"></div>
-  <img class="bottom_image" src="images/png.png">
-  <p class="text text-8">Try &nbsp;it yourself!</p>
-  <div class="try_it">
-    <p>Start making your web app now with a free plan.</p>
-    <p>No Commitment. No credit cards. A lot of help from us.</p>
-</div>
-  <button class="green_button">Start now</button>
+<!--Here's How It Works Section-->
+<section id="how_it_works" class="gray_bg">
+  <h2>How it works</h2>
+  <div id="big_how_container">
+    <div id="how1" class="how_container">
+      <div class="how_img_cont">
+        <img src="../images/how1.png">
+      </div>
+      <div class="how_desc">
+        <h3>1. Choose the APIs you need.</h3>
+        <p>Our API is constantly growing and features most of the popular APIs on the market today.</p>
+      </div>
+    </div>
+    <div id="how2" class="how_container">
+      <div class="how_img_cont">
+        <img src="../images/how2.png">
+      </div>
+      <div class="how_desc">
+        <h3>2. Define an action and a result.</h3>
+        <p>Instead of coding the backend, let our software work for you. It's as simple as "If this... then that!"</p>
+      </div>
+    </div>  
+    <div id="how3" class="how_container">
+      <div class="how_img_cont">
+        <img src="../images/how3.png">
+      </div>
+      <div class="how_desc">
+        <h3>3. Design the front end.</h3>
+        <p>Create a visual interface for your new app using familiar frameworks such as Backbone, AngularJS or Ember.</p>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<section id="completed_projects">
+  <h2>Completed Projects Using Stamplay</h2>
+  <img src="../images/projects.png">
+</section>
+
+<section id="try_it">
+  <div id="try_container">
+    <div id="try_it_desc">
+      <h2>Try it yourself!</h2>
+      <p>Start making your web app now with a free plan.</br>No Commitment. No credit cards. A lot of help from us.</p>
+    </div>
+    <a id="start_now_btn" class="btn btn-primary btn-green" href="#">Start now</a>  
+  </div>
+</section>
 
   <!--Footer-->
+  <footer>
+    <img src="../images/footer.png">
+
+  </footer>
+
   <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>  
   <script type="text/javascript" src="js/stamplay.js"></script>
 

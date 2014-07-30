@@ -7,10 +7,22 @@ var message = ['Skip the code.<br> Connect the backend magic to frontend design.
                 'Designers can prototype web applications in minutes <br> to show to clients, gather feedback and iterate at a faster pace.',
                 'We let developers build web applications <br> saving up to <b>90%</b> of the cost and time of backend development.'];
 
+var scrolled = 0;
+
 $(document).ready(function() {
-  $('#slider_desc').addClass('go');   
-  setInterval(function(){ changeDesc() }, display_delay);
+  //$('#slider_desc').addClass('go');   
+  //setInterval(function(){ changeDesc() }, display_delay);
   //setInterval(function(){ changePic()}, display_delay);  
+
+  console.log('Scroll beginning: ' + scrolled);
+  $('#learn_btn').click(function() {
+    scrolled = scrolled + 594;
+    console.log('Scrolled: ' + scrolled);
+    $('body').animate({
+      scrollTop: scrolled 
+    });
+    scrolled = 0;
+  });
 });
 
 function changeDesc() {
