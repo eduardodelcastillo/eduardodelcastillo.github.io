@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -11,7 +15,8 @@
 
 
 body {
-	font-family:  "Gill Sans", Futura,  Arial, Helvetica;
+	font-family:  FontAwesome, Futura,  Arial, Helvetica;
+  font-weight: 300;
 }
 /* BELOW IS TO OVERRIDE "USER AGENT STYLE SHEET" that added a left-padding of 40px --->*/
 ul {
@@ -49,7 +54,9 @@ ul {
 .chart {
 	width: 90%;
 	list-style-type: none;
-  color: black;
+  color: #232323;
+  font-weight: 200;
+  opacity: 0.7;
 }
 .chart-base {
 	width: 90%;
@@ -73,10 +80,11 @@ ul {
 
  .chart .percent {
 	/*letter-spacing: -1px;*/
-	opacity: .9;
+	opacity: 0.9;
 	/*width: 100%;*/
 	margin-bottom: 0;
 	padding-bottom: 0;
+  font-size: 1em;
 }
 
 /* END CHART CLASS ------------------------------>*/
@@ -244,10 +252,11 @@ ul {
 	  	margin: 0 auto -3px;
 	  	text-align: center;
 	  }
-
+/*
 	  .chart .percent {
-		 font-size: 22px;
+		 font-size: 1em;
 	  }
+ */   
 
     .chart .y2011 {
       width: 30%;
@@ -378,7 +387,7 @@ ul {
 }
 #percent-500 { 
   letter-spacing: -.8px;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 #percent-nas {
    letter-spacing: -.4px;
@@ -482,9 +491,11 @@ ul {
    letter-spacing: -.1px;
    font-size: .9em;
 }
+/*
   .chart .percent {
-    font-size: 22px;
+    font-size: 0.8em;
   }
+ */ 
 
   .chart span { font-size: 15px;  }
 
@@ -534,9 +545,11 @@ ul {
   font-size: 1.4em;
   padding-bottom: 15px;
 }
+/*
   .chart .percent {
-    font-size: 24px;
+    font-size: 0.9em;
   }
+ */ 
 
    .chart span { 
     font-size: 17px; 
@@ -636,9 +649,11 @@ ul {
   font-size: 1.7em;
   padding-bottom: 15px;
 }
+/*
   .chart .percent {
-    font-size: 25px;
+    font-size: 0.9em;
   }
+ */ 
    .chart span { font-size: 19px;  }
 
     .chart .y2011 {
@@ -731,9 +746,11 @@ ul {
 }
 
 @media (min-width: 800px) {
+/*  
   .chart .percent {
-    font-size: 27px;
+    font-size: 1em;
   }
+ */ 
 
    .chart span { font-size: 21px;  }
 
@@ -824,9 +841,11 @@ ul {
   font-size: 2em;
   padding-bottom: 15px;
 }
+/*
   .chart .percent {
     font-size: 30px;
   }
+ */ 
   
   .chart span { font-size: 23px;  }
 
@@ -870,9 +889,11 @@ ul {
 }
 
 @media (min-width: 1000px) {
+/*  
   .chart .percent {
-    font-size: 28px;
+    font-size: 1em;
   }
+ */ 
    .chart span { font-size: 25px;  }
 
   .x-axis-yr {
@@ -912,9 +933,11 @@ ul {
 }
 
 @media (min-width: 1200px) {
+/*  
   .chart .percent {
     font-size: 28.5px;
   }
+ */ 
    .chart span { font-size: 37px;  }
 
   .x-axis-yr {
