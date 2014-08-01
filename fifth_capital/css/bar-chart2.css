@@ -1,0 +1,977 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+#big-phone {
+  font-size: 2em;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+
+body {
+	font-family:  FontAwesome, Futura,  Arial, Helvetica;
+}
+/* BELOW IS TO OVERRIDE "USER AGENT STYLE SHEET" that added a left-padding of 40px --->*/
+ul {
+  padding-left: 0;
+}
+/* END */
+/* ROI */
+#roi {
+  text-align: center;
+  font-size: .8em;
+}
+/* END ROI */
+
+/* RULES  */
+#rules {
+  font-style: italic;
+  text-align: left;
+}
+/* END RULES*/
+/* ITALIC SPAN */
+#italicize-this {
+  font-style: italic;
+}
+/* END ITALIC SPAN*/
+/* ACCOUNT INFO*/
+#info {
+  text-align: left;
+  width:77%;
+  margin: 0 auto;
+  padding: 0 2px;
+
+}
+/* END ACCOUNT INFO */
+/* CHART CLASS STARTS HERE---*/
+.chart {
+	width: 90%;
+	list-style-type: none;
+  color: #232323;
+  font-weight: 200;
+  opacity: 0.7;
+}
+.chart-base {
+	width: 90%;
+	list-style-type: none;
+}
+
+.chart li {
+
+    display: block;
+
+    padding: 2px 0;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+ .chart .label{
+ 	background: #EAEAEA;
+ 	margin: -.6em 0 65px 0;
+ }
+
+ .chart .percent {
+	/*letter-spacing: -1px;*/
+	opacity: 0.9;
+	/*width: 100%;*/
+	margin-bottom: 0;
+	padding-bottom: 0;
+  font-size: 1em;
+}
+
+/* END CHART CLASS ------------------------------>*/
+
+
+
+
+
+/*------------*/
+/* 2011 */
+.entity-5th-2011 {
+  height: 65px;
+  padding-top:2px;
+  background-color: #FFD700;
+  font-size: 1.2em;
+}
+.entity-dow-2011 {
+  height: 32px;
+  background-color: #2151A5;
+}
+
+.entity-sp500-2011 {
+  height: 33px;
+  background-color: #36B2D6;
+}
+.entity-nas-2011 {
+  height: 28px;
+  background-color: #B0EEF9;
+  /*display: table-cell;*/
+  /*width: inherit;*/
+  /*position: relative;*/
+  vertical-align: middle;
+  padding-top: 11px;
+}
+
+/* 2012 */
+.entity-5th-2012 {
+  height: 132px;
+  background-color:#FFD700;
+  font-size: 1.2em;
+  letter-spacing: 1.24px;
+  }
+.entity-nas-2012 {
+  height: 35.22px;
+  background-color: #B0EEF9;
+}
+.entity-sp500-2012 {
+  height: 87.2px;
+  background-color: #36B2D6;
+}
+.entity-dow-2012 {
+  height: 90.4px;
+  background-color: #2151A5;
+}
+
+.entity-5th-2013 {
+  height: 63.2085px;
+  background-color:#FFD700;
+    padding-top: 0;
+  font-size: 1.2em;
+  letter-spacing: 1.24px;
+}
+
+.entity-nas-2013 {
+  height: 115.3933px;
+  background-color: #B0EEF9;
+}
+
+.entity-sp500-2013 {
+  height: 42.44px;
+  background-color: #36B2D6;
+}
+.entity-dow-2013 {
+  height: 352.8282px;
+  background-color: #2151A5;
+}
+/* END PERFORMANCE ENTITIES, i.e. 5th Capital against the stock markets-------------->*/
+
+
+/* SPACERS------------------------------------->*/
+#spacer-5th-2012 {
+  height: 35px;
+}
+
+#spacer-dow-2011 {
+  height: 2px;
+}
+#spacer-500-2011 {
+  height: 3px;
+}
+  #spacer-dow-2012 {
+    display: inline-block;
+    height: 54px;
+  }
+   
+  #spacer-500-2012 {
+    height: 31px;
+  }
+
+  #spacer-nas-2012 {
+    height: 3px;
+  }
+
+  #spacer-dow-2013 {
+    display: inline-block;
+    height: 175px;
+  }
+   
+  #spacer-500-2013 {
+    height: 7px;
+  }
+
+  #spacer-nas-2013 {
+    height: 44px;
+  }
+/* END SPACERS------------------------------------->*/
+
+
+/* YEARS-------------------------------------------> */
+ /*NOTE: selectors cannot start with a digit...*/
+
+.chart .y2011 {
+  height: 160px;
+}
+
+
+
+/* height= 135/9.86 * 25.26 */
+ .chart .y2012 {
+	/*background-image: linear-gradient(orange, #CD8162 70%);*/
+	height: 345.85px;
+	
+ }
+  .chart .y2013 {
+	/*background-image: linear-gradient(orange, #FF8C00 70%);*/
+	height: 577.87px;
+ }
+/* END YEARS------------------------->*/
+
+
+
+/* RESPONSIVE STARTS HERE--------------->*/
+/* ALWAYS REMEMBER TO ADD IN: <meta name="viewport" content="width=device-width, user-scalable=no">*/
+
+@media (min-width: 300px) {
+    .wrapper.style2 {
+      background-image: url('images/vault-small.jpg');
+      background-size: 25em, 25em;
+      color: white;
+    }
+    #big-phone {
+      padding-bottom: 15px;
+    }
+    #call {
+      font-size: 1.2em;
+      padding-bottom: 15px;
+    }  
+	  .chart {
+	    background: url("../images/bg-chart.png") right top repeat-x;
+	    margin: 0 auto 1px;
+	    text-align: center;
+	  }
+
+	  .chart-base {
+	  	margin: 0 auto -3px;
+	  	text-align: center;
+	  }
+/*
+	  .chart .percent {
+		 font-size: 1em;
+	  }
+ */   
+
+    .chart .y2011 {
+      width: 30%;
+    }
+    .chart .y2012 {
+      width: 30%;
+    }
+    .chart .y2013 {
+      width: 30%;
+    }
+
+    /* 2011 */
+    .entity-dow-2011 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: .1px;
+    }
+    .entity-sp500-2011 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+
+    .entity-nas-2011 {
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+    .entity-5th-2011 {
+      /*opacity: .9;*/
+      font-size: .75em;
+      letter-spacing: .1px;
+    }
+    /* END 2011 */
+
+    .entity-dow-2012 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: .1px;
+    }
+    .entity-sp500-2012 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+
+    .entity-nas-2012 {
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+    .entity-5th-2012 {
+      /*opacity: .9;*/
+      font-size: .8em;
+      letter-spacing: .1px;
+    }
+
+    .entity-5th-2013 {
+      /*opacity: .9;*/
+      font-size: .8em;
+      letter-spacing: .1px;
+    }
+    .entity-nas-2013 {
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+    .entity-sp500-2013 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: -.1px;
+    }
+    .entity-dow-2013 {
+      padding-top:0px;
+      font-size: .65em;
+      letter-spacing: .1px;
+    }
+
+#percent-dow { 
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+#percent-500 { 
+  letter-spacing: -.2px;
+  font-size: 1em;
+}
+#percent-nas {
+   letter-spacing: -.4px;
+   font-size: .9em;
+}
+.small500 {
+  font-size:.9em;
+  display: inline;
+}  
+  .x-axis-yr {
+  	text-align: center;
+  	width: 30%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+  .chart-base li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: bottom;
+  }
+  .chart li {
+    display: inline-block;
+    height: 600px;
+    margin: 0 1.8% 0 0;
+    /*width: 30%;*/
+    vertical-align: bottom;
+  }
+
+  .chart .axis {
+    display: inline-block;
+  }
+
+	.x-axis {
+	 display: block;
+	}  
+}
+
+
+@media (min-width: 361px) {
+#call {
+  font-size: 1.22em;
+  padding-bottom: 15px;
+}
+#big-phone {
+  padding-bottom: 16px;
+}
+#percent-500 { 
+  letter-spacing: -.8px;
+  font-size: 0.9em;
+}
+#percent-nas {
+   letter-spacing: -.4px;
+   font-size: .9em;
+}
+#percent-dow { 
+  letter-spacing: 1px;
+  font-size: .9em;
+}
+    .entity-5th-2011 {
+      /*opacity: .9;*/
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+
+    .entity-dow-2011 {
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: .1px;
+      }
+
+      .entity-sp500-2011 {
+        font-size: .8em;
+        letter-spacing: .19px;
+      }
+
+      .entity-nas-2011 {
+        padding-top:9px;
+        font-size: .7em;
+        letter-spacing: -.2px;
+        vertical-align: middle;
+      }
+    .entity-5th-2012 {
+      /*opacity: .9;*/
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+
+    .entity-dow-2012 {
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: .1px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: .8em;
+        letter-spacing: .19px;
+      }
+
+      .entity-nas-2012 {
+        padding-top:0px;
+        font-size: .7em;
+        letter-spacing: -.2px;
+        vertical-align: middle;
+      }
+     .entity-dow-2013 {
+        font-size: .9em;
+        letter-spacing: .1px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: .8em;
+        letter-spacing: .19px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .7em;
+        letter-spacing: -.2px;
+        vertical-align: middle;
+      }
+
+    .chart .y2011 {
+      width: 30%;
+    }
+    .chart .y2012 {
+      width: 30%;
+    }
+    .chart .y2013 {
+      width: 30%;
+    }
+
+      .x-axis-yr {
+        width: 30%;
+      }
+
+      .chart-base li {
+        width: 30%;
+      }
+
+      .chart li {
+        width: 30%;
+      }
+}
+
+@media (min-width: 401px) {
+#percent-500 { 
+  letter-spacing: -.4px;
+  font-size: 1em;
+}
+#percent-nas {
+   letter-spacing: -.1px;
+   font-size: .9em;
+}
+/*
+  .chart .percent {
+    font-size: 0.8em;
+  }
+ */ 
+
+  .chart span { font-size: 15px;  }
+
+  .x-axis-yr {
+  	width: 29%;
+  }
+
+  .chart-base li {
+    width: 29%;
+  }
+
+  .chart li {
+    width: 29%;
+  }
+    .chart .y2011 {
+      width: 29%;
+    }
+    .chart .y2012 {
+      width: 29%;
+    }
+    .chart .y2013 {
+      width: 29%;
+    }
+  .entity-5th-2011 {
+    /*opacity: .9;*/
+    font-size: 1em;
+    /*opacity: .8;*/
+    letter-spacing: .8px;
+  }
+  .entity-5th-2012 {
+    /*opacity: .9;*/
+    font-size: 1em;
+    /*opacity: .8;*/
+    letter-spacing: .8px;
+  }
+  .entity-5th-2013 {
+    font-size: 1em;
+    }
+#big-phone {
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+}
+
+@media (min-width: 500px) {
+  #call {
+  font-size: 1.4em;
+  padding-bottom: 15px;
+}
+/*
+  .chart .percent {
+    font-size: 0.9em;
+  }
+ */ 
+
+   .chart span { 
+    font-size: 17px; 
+    margin: 0;
+    padding: 0;
+   }
+
+  .x-axis-yr {
+  	text-align: center;
+  	width: 23%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    display: inline-block;
+    width: 23%;
+    vertical-align: bottom;
+  }
+
+  .chart li {
+    width: 23%;
+  }
+
+    .chart .y2011 {
+      width: 23%;
+    }
+    .chart .y2012 {
+      width: 23%;
+    }
+    .chart .y2013 {
+      width: 23%;
+    }
+
+      .entity-5th-2011 {
+        font-size: 1em;
+        letter-spacing: .9px;
+      }
+      .entity-dow-2011 {
+        font-size: .8em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2011 {
+        font-size: .8em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2011 {
+        font-size: .7em;
+        letter-spacing: -.35px;
+      }
+
+      .entity-5th-2012 {
+        font-size: 1em;
+        letter-spacing: .9px;
+      }
+      .entity-dow-2012 {
+        font-size: .8em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: .8em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2012 {
+        font-size: .7em;
+        letter-spacing: -.35px;
+      }
+      .entity-5th-2013 {
+        font-size: 1em;
+        letter-spacing: .9px;
+      }
+      .entity-dow-2013 {
+        font-size: .8em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: .8em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .7em;
+        letter-spacing: -.35px;
+      }
+
+}
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 700px) {
+  #call {
+  font-size: 1.7em;
+  padding-bottom: 15px;
+}
+/*
+  .chart .percent {
+    font-size: 0.9em;
+  }
+ */ 
+   .chart span { font-size: 19px;  }
+
+    .chart .y2011 {
+      width: 21%;
+    }
+    .chart .y2012 {
+      width: 21%;
+    }
+    .chart .y2013 {
+      width: 21%;
+    }
+  .x-axis-yr {
+  	text-align: center;
+  	width: 21%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    display: inline-block;
+    width: 21%;
+    vertical-align: bottom;
+  }
+
+  .chart li {
+    width: 21%;
+  }
+
+      .entity-5th-2011 {
+        /*opacity: .7;*/
+        font-size: 1.1em;
+        letter-spacing: .9px;
+
+      }
+      .entity-dow-2011 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2011 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2011 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+
+      .entity-5th-2012 {
+        /*opacity: .7;*/
+        font-size: 1.1em;
+        letter-spacing: .9px;
+
+      }
+      .entity-dow-2012 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2012 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      .entity-5th-2013 {
+        font-size: 1.1em;
+      }
+      .entity-dow-2013 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      #big-phone {
+        padding-top: 7px;
+      }
+
+}
+
+@media (min-width: 800px) {
+/*  
+  .chart .percent {
+    font-size: 1em;
+  }
+ */ 
+
+   .chart span { font-size: 21px;  }
+
+   .x-axis-yr {
+  	text-align: center;
+  	width: 19%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    width: 19%;
+  }
+
+  .chart li {
+    width: 19%;
+  }
+
+    .chart .y2011 {
+      width: 19%;
+    }
+    .chart .y2012 {
+      width: 19%;
+    }
+    .chart .y2013 {
+      width: 19%;
+    }
+  .entity-5th-2011 {
+    font-size: 1.1em;
+    letter-spacing: .9px;
+  }
+  .entity-5th-2012 {
+    font-size: 1.1em;
+    letter-spacing: .9px;
+  }
+  .entity-5th-2013 {
+    font-size: 1.1em;
+    letter-spacing: .9px;
+  }
+
+      .entity-nas-2011 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+
+
+      .entity-dow-2012 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2012 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+
+      .entity-dow-2013 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      .entity-nas-2011 {
+          padding-top:8px;
+      }
+      #big-phone {
+        padding-top: 6px;
+      }
+  }
+
+
+}
+
+@media (min-width: 900px) {
+  #call {
+  font-size: 2em;
+  padding-bottom: 15px;
+}
+/*
+  .chart .percent {
+    font-size: 30px;
+  }
+ */ 
+  
+  .chart span { font-size: 23px;  }
+
+  .x-axis-yr {
+  	width: 17%;
+  }
+
+  .chart-base li {
+    width: 17%;
+  }
+
+  .chart li {
+    width: 17%;
+  }
+    .chart .y2011 {
+      width: 17%;
+    }
+    .chart .y2012 {
+      width: 17%;
+    }
+    .chart .y2013 {
+      width: 17%;
+    }
+
+  .entity-5th-2012 {
+    /*opacity: .7;*/
+    /*font-size: 1em;*/
+    letter-spacing: 1px;
+  }
+  .entity-5th-2013 {
+    letter-spacing: 1px;
+  }
+  .entity-nas-2011 {
+    padding-top:6px;
+  }
+#big-phone {
+  font-size: 2.9em;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+}
+
+@media (min-width: 1000px) {
+/*  
+  .chart .percent {
+    font-size: 1em;
+  }
+ */ 
+   .chart span { font-size: 25px;  }
+
+  .x-axis-yr {
+  	width: 14%;
+  }
+
+  .chart-base li {
+    width: 14%;
+  }
+  .chart li {
+    width: 14%;
+  }
+    .chart .y2011 {
+      width: 14%;
+    }
+    .chart .y2012 {
+      width: 14%;
+    }
+    .chart .y2013 {
+      width: 14%;
+    }
+  .entity-5th-2012 {
+    /*font-size: 1.05em;*/
+    letter-spacing: 1px;
+  }
+  .entity-5th-2013 {
+    /*font-size: 1.05em;*/
+    letter-spacing: 1px;
+  }
+  .entity-nas-2011 {
+    padding-top:4px;
+  }
+#big-phone {
+  font-size: 3em;
+
+}
+}
+
+@media (min-width: 1200px) {
+/*  
+  .chart .percent {
+    font-size: 28.5px;
+  }
+ */ 
+   .chart span { font-size: 37px;  }
+
+  .x-axis-yr {
+  	width: 13%;
+  }
+  .chart-base li {
+    width: 13%;
+  }
+  .chart li {
+    width: 13%;
+        /*-moz-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+    /*-webkit-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+    /*box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+  }
+      .chart .y2011 {
+      width: 13%;
+    }
+    .chart .y2012 {
+      width: 13%;
+    }
+    .chart .y2013 {
+      width: 13%;
+    }
+
+  .entity-5th-2012 {
+    letter-spacing: 1.2px;
+  }
+  .entity-5th-2013 {
+    letter-spacing: 1.2px;
+  }
+  .entity-nas-2011 {
+    padding-top:0;
+  }
+#big-phone {
+  font-size: 3.5em;
+}
+}
+/* END RESPONSIVE---------------------------->*/
+
+
+
+

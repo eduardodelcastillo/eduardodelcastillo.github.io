@@ -1,0 +1,800 @@
+body {
+	font-family:  "Gill Sans", Futura,  Arial, Helvetica;
+}
+/* BELOW IS TO OVERRIDE "USER AGENT STYLE SHEET" that added a left-padding of 40px --->*/
+ul {
+  padding-left: 0;
+}
+/* END */
+
+/* CHART CLASS STARTS HERE---*/
+.chart {
+	width: 90%;
+	list-style-type: none;
+}
+.chart-base {
+	width: 90%;
+	list-style-type: none;
+}
+
+.chart li {
+/*    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    */
+   /* -moz-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+    display: block;
+    height: 135px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+ .chart .label{
+ 	background: #EAEAEA;
+ 	margin: -.6em 0 65px 0;
+ }
+
+ .chart .percent {
+	letter-spacing: -1px;
+	opacity: .9;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* END CHART CLASS ------------------------------>*/
+
+/* PERFORMANCE ENTITIES, i.e. 5th Capital against the stock markets-------------->*/
+.entity-5th {
+	height: 54px;
+	padding-top: 0;
+  font-size: 1.2em;
+  letter-spacing: 1.24px;
+  /*background: #4ecdc4;*/
+  background: orange;
+  padding-top: 2px;
+  /*border: 1px solid black;*/
+}
+
+      .entity-dow { 
+        opacity: .7;
+      }
+
+      .entity-sp500 {
+        opacity: .8;
+      }
+
+      .entity-nas {
+        background-color: #4ecdc4;
+        opacity: .7;
+
+      }
+
+.entity-5th-2012 {
+  height: 129px;
+  background-color:#FFA500;
+    padding-top: 0;
+  font-size: 1.2em;
+  letter-spacing: 1.24px;
+}
+.entity-nas-2012 {
+  height: 35.22px;
+  background-color: #4ECDC4;
+}
+.entity-sp500-2012 {
+  /*height: 183.6px;*/
+  height: 87.2px;
+  background-color: #B404AE;
+}
+.entity-dow-2012 {
+  height: 99.4px;
+  background-color: #F5A9E1;
+}
+
+.entity-5th-2013 {
+  height: 60.2085px;
+  background-color:#FFA500;
+    padding-top: 0;
+  font-size: 1.2em;
+  letter-spacing: 1.24px;
+}
+
+.entity-nas-2013 {
+  height: 115.3933px;
+  background-color: #4ECDC4;
+
+}
+
+.entity-sp500-2013 {
+  height: 42.44px;
+  background-color: #B404AE;
+}
+.entity-dow-2013 {
+  height: 362.8282px;
+  background-color: #F5A9E1;
+}
+/* END PERFORMANCE ENTITIES, i.e. 5th Capital against the stock markets-------------->*/
+
+
+/* SPACERS------------------------------------->*/
+  #spacer-dow {
+    display: inline-block;
+    height: 26px;
+  }
+
+  #spacer-500 {
+    height: 6px;
+  }
+
+  #spacer-nas {
+    height: 3px;
+  }
+
+  #spacer-dow-2012 {
+    display: inline-block;
+    height: 54px;
+  }
+   
+  #spacer-500-2012 {
+    height: 37px;
+  }
+
+  #spacer-nas-2012 {
+    height: 11px;
+  }
+
+  #spacer-dow-2013 {
+    display: inline-block;
+    height: 175px;
+  }
+   
+  #spacer-500-2013 {
+    height: 13px;
+  }
+
+  #spacer-nas-2013 {
+    height: 52px;
+  }
+/* END SPACERS------------------------------------->*/
+
+
+/* YEARS-------------------------------------------> */
+ /*NOTE: selectors cannot start with a digit...*/
+
+
+ .y2011 {
+ 	height: 10%;
+  /*border: 1px solid purple;*/
+  padding: 0;
+  margin: 0;
+ }
+
+ .y2012 {
+ 	height: 26%;
+ }
+
+ .y2013 {
+ 	height: 43%;
+ }
+
+ .chart .y2011{
+	
+	background-image: linear-gradient(#FF9900, #65E0CB 70%);
+	height: 135px;
+
+ }
+/* height= 135/9.86 * 25.26 */
+ .chart .y2012 {
+	background: #FFA500;
+	/*background-image: linear-gradient(orange, #CD8162 70%);*/
+	height: 345.85px
+	
+ }
+  .chart .y2013 {
+	background: #FFA500;
+	/*background-image: linear-gradient(orange, #FF8C00 70%);*/
+	height: 575.87px;
+ }
+/* END YEARS------------------------->*/
+
+
+
+/* RESPONSIVE STARTS HERE--------------->*/
+/* ALWAYS REMEMBER TO ADD IN: <meta name="viewport" content="width=device-width, user-scalable=no">*/
+
+@media (min-width: 300px) {
+	  .chart {
+	    background: url("../images/bg-chart.png") right top repeat-x;
+	    margin: 0 auto 1px;
+	    text-align: center;
+	  }
+
+	  .chart-base {
+	  	margin: 0 auto -3px;
+	  	text-align: center;
+	  }
+
+	  .chart .percent {
+		 font-size: 22px;
+	  }
+    .entity-5th {
+      margin-top: -6px;
+      opacity: .9;
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+    .entity-dow {
+      height: 43px;
+      padding-top:0px;
+      /*margin-top: 20px;*/
+      font-size: .8em;
+      letter-spacing: .1px;
+      background-color: #F5A9E1;
+    }
+    .entity-sp500 {
+      height: 26px;
+      padding-top:0px;
+      font-size: .8em;
+      letter-spacing: -.1px;
+      background-color: #B404AE;
+    }
+
+    .entity-nas {
+      height: 21px;
+      font-size: .7em;
+      letter-spacing: -.1px;
+    }
+
+    .entity-dow-2012 {
+      padding-top:0px;
+      font-size: .75em;
+      letter-spacing: .1px;
+    }
+    .entity-sp500-2012 {
+      padding-top:0px;
+      font-size: .75em;
+      letter-spacing: -.1px;
+    }
+
+    .entity-nas-2012 {
+      font-size: .7em;
+      letter-spacing: -.1px;
+    }
+    .entity-5th-2012 {
+      opacity: .9;
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+
+    .entity-5th-2013 {
+      opacity: .9;
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+    .entity-nas-2013 {
+      font-size: .7em;
+      letter-spacing: -.1px;
+    }
+    .entity-sp500-2013 {
+      padding-top:0px;
+      font-size: .75em;
+      letter-spacing: -.1px;
+    }
+    .entity-dow-2013 {
+      padding-top:0px;
+      font-size: .8em;
+      letter-spacing: .1px;
+    }
+
+#percent-dow { 
+  letter-spacing: -1.5px;
+  font-size: 1em;
+  opacity: 1.1;
+}
+
+#percent-500 { 
+  letter-spacing: -1px;
+  font-size: 1em;
+  opacity: 1.1;
+}
+#percent-nas {
+   letter-spacing: -1px;
+   font-size: 1em;
+   opacity: 1.1; 
+}
+  
+  .x-axis-yr {
+  	text-align: center;
+  	width: 30%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+  .chart-base li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: bottom;
+  }
+  .chart li {
+    display: inline-block;
+    height: 600px;
+    margin: 0 1.8% 0 0;
+    width: 30%;
+    vertical-align: bottom;
+  }
+
+  .chart .axis {
+    display: inline-block;
+  }
+
+  .chart .skill {
+    bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+  }
+	.x-axis {
+	 display: block;
+	}  
+  .chart span { 
+    font-size: 20px;  
+  }
+}
+
+
+@media (min-width: 361px) {
+
+    .entity-dow {
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: .1px;
+        background-color: #F5A9E1;
+      }
+
+      .entity-sp500 {
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: .19px;
+        background-color: #B404AE;
+      }
+
+      .entity-nas {
+        padding-top:0px;
+        font-size: .7em;
+        letter-spacing: -.2px;
+        background-color: #4ecdc4;
+        /*padding-bottom:2px;*/
+        vertical-align: middle;
+      }
+    .entity-5th-2012 {
+      opacity: .9;
+      font-size: .9em;
+      letter-spacing: .8px;
+    }
+
+    .entity-dow-2012 {
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: .1px;
+        background-color: #F5A9E1;
+      }
+
+      .entity-sp500-2012 {
+        font-size: .8em;
+        letter-spacing: .19px;
+      }
+
+      .entity-nas-2012 {
+        padding-top:0px;
+        font-size: .7em;
+        letter-spacing: -.2px;
+        vertical-align: middle;
+      }
+     .entity-dow-2013 {
+        font-size: .9em;
+        letter-spacing: .1px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: .8em;
+        letter-spacing: .19px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .7em;
+        letter-spacing: -.2px;
+        vertical-align: middle;
+      }
+
+
+      #spacer-500 {
+         height: 6px;
+      }
+
+      .x-axis-yr {
+        width: 29%;
+      }
+
+      .chart-base li {
+        width: 29%;
+      }
+
+      .chart li {
+        width: 29%;
+      }
+}
+
+@media (min-width: 401px) {
+  .chart .percent {
+    font-size: 22px;
+  }
+
+  .chart span { font-size: 15px;  }
+
+  .x-axis-yr {
+  	width: 28%;
+  }
+
+  .chart-base li {
+    width: 28%;
+  }
+
+  .chart li {
+    width: 28%;
+  }
+
+  .entity-5th {
+    margin-top: -6px;
+    opacity: .9;
+    font-size: 1em;
+    opacity: .8;
+    letter-spacing: .8px;
+  }
+  .entity-5th-2012 {
+    opacity: .9;
+    font-size: 1em;
+    opacity: .8;
+    letter-spacing: .8px;
+  }
+  .entity-5th-2013 {
+    font-size: 1em;
+    }
+  #spacer-500 {
+  height: 6px;
+  }
+}
+
+@media (min-width: 500px) {
+  .chart .percent {
+    font-size: 24px;
+  }
+
+   .chart span { 
+    font-size: 17px; 
+    margin: 0;
+    padding: 0;
+   }
+
+  .x-axis-yr {
+  	text-align: center;
+  	width: 26%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    display: inline-block;
+    width: 26%;
+    vertical-align: bottom;
+  }
+
+  .chart li {
+    width: 26%;
+  }
+
+      .entity-5th {
+        margin-top: -6px;
+        height: 54px;
+        font-size: 1em;
+        letter-spacing: .9px;
+        color: #202020;
+      }
+
+      .entity-dow {
+        height: 43px;
+        padding-top:0px;
+        font-size: 1em;
+        letter-spacing: .7px;
+        background-color: #F5A9E1;
+      }
+
+      .entity-sp500 {
+        height: 24px;
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: -.12px;
+        background-color: #B404AE;
+      }
+
+      .entity-nas {
+        height: 23px;
+        padding-top:0px;
+        font-size: .9em;
+        letter-spacing: -.35px;
+        background-color: #4ecdc4;
+      }
+      .entity-5th-2012 {
+        font-size: 1em;
+        letter-spacing: .9px;
+      }
+      .entity-dow-2012 {
+        font-size: 1em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: .9em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2012 {
+        font-size: .9em;
+        letter-spacing: -.35px;
+      }
+      .entity-5th-2013 {
+        font-size: 1em;
+        letter-spacing: .9px;
+      }
+      .entity-dow-2013 {
+        font-size: 1em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: .9em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .9em;
+        letter-spacing: -.35px;
+      }
+      #spacer-500 {
+        height: 4px;
+      }
+
+}
+
+@media (min-width: 700px) {
+  .chart .percent {
+    font-size: 25px;
+  }
+   .chart span { font-size: 19px;  }
+
+  .x-axis-yr {
+  	text-align: center;
+  	width: 23.5%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    display: inline-block;
+    width: 23.5%;
+    vertical-align: bottom;
+  }
+
+  .chart li {
+    width: 23.5%;
+  }
+
+  .entity-5th {
+    opacity: .7;
+    font-size: .95em;
+    letter-spacing: .9px;
+
+  }
+
+      .entity-dow {
+        height: 43px;
+        padding-top:0px;
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500 {
+        height: 24px;
+        padding-top:0px;
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas {
+        height: 23px;
+        padding-top:0px;
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      .entity-5th-2012 {
+        opacity: .7;
+        font-size: .95em;
+        letter-spacing: .9px;
+
+      }
+      .entity-dow-2012 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2012 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2012 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      .entity-5th-2013 {
+        font-size: .95em;
+      }
+      .entity-dow-2013 {
+        font-size: 1.05em;
+        letter-spacing: .7px;
+      }
+
+      .entity-sp500-2013 {
+        font-size: 1.05em;
+        letter-spacing: -.12px;
+      }
+
+      .entity-nas-2013 {
+        font-size: .95em;
+        letter-spacing: -.35px;
+      }
+      #spacer-500 {
+        height: 3px;
+      }
+
+}
+
+@media (min-width: 800px) {
+  .chart .percent {
+    font-size: 27px;
+  }
+
+   .chart span { font-size: 21px;  }
+
+   .x-axis-yr {
+  	text-align: center;
+  	width: 21%;
+  	margin: 0px 1.8% 0px 0px;
+  }
+
+  .chart-base li {
+    width: 21%;
+  }
+
+  .chart li {
+    width: 21%;
+  }
+
+  .entity-5th {
+    opacity: .7;
+    font-size: 1.0em;
+    letter-spacing: .9px;
+  }
+
+  .entity-5th-2012 {
+    font-size: 1.0em;
+    letter-spacing: .9px;
+  }
+  .entity-5th-2013 {
+    font-size: 1.0em;
+    letter-spacing: .9px;
+  }
+}
+
+@media (min-width: 900px) {
+  .chart .percent {
+    font-size: 30px;
+  }
+  
+  .chart span { font-size: 23px;  }
+
+  .x-axis-yr {
+  	width: 19%;
+  }
+
+  .chart-base li {
+    width: 19%;
+  }
+
+  .chart li {
+    width: 19%;
+  }
+
+  .entity-5th {
+    height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: .7;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+
+  .entity-5th-2012 {
+    opacity: .7;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  .entity-5th-2013 {
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .chart .percent {
+    font-size: 28px;
+  }
+   .chart span { font-size: 25px;  }
+
+  .x-axis-yr {
+  	width: 16%;
+  }
+
+  .chart-base li {
+    width: 16%;
+  }
+  .chart li {
+    width: 16%;
+  }
+  .entity-5th {
+    padding-top: 0;
+    opacity: .7;
+    font-size: 1.05em;
+    letter-spacing: 1px;
+  }
+  .entity-5th-2012 {
+    font-size: 1.05em;
+    letter-spacing: 1px;
+  }
+  .entity-5th-2013 {
+    font-size: 1.05em;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chart .percent {
+    font-size: 28.5px;
+  }
+   .chart span { font-size: 37px;  }
+
+  .x-axis-yr {
+  	width: 14%;
+  }
+  .chart-base li {
+    width: 14%;
+  }
+  .chart li {
+    width: 14%;
+        /*-moz-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+    /*-webkit-box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+    /*box-shadow: -5px -5px 5px 5px rgba(255, 255, 255, 0.6) inset;*/
+  }
+  .entity-5th {
+    font-size: 1.05em;
+    letter-spacing: 1.2px;
+  }
+  .entity-5th-2012 {
+    letter-spacing: 1.2px;
+  }
+  .entity-5th-2013 {
+    letter-spacing: 1.2px;
+  }
+}
+/* END RESPONSIVE---------------------------->*/
+
+
+
+

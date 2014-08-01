@@ -1,0 +1,7 @@
+.has-error {
+	background: red;
+	border: 1px solid red;
+}
+.has-success {
+	border:1px solid purple;
+}
