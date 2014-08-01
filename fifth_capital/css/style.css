@@ -634,9 +634,9 @@
 		}
     /*Added by E: */           
     #logo img {
-        width: 155px;
-        height: 60px;
-        margin-top:-16px;
+        min-width: 200px;
+        min-height: 50px;
+        margin-top:-12px;
         margin-left: 20px;
     }    
 /* Header */
@@ -829,7 +829,7 @@
 		padding: 6em 0;
 		text-align: center;
 		background: linear-gradient(0deg, rgba(69,39,0,0.4), rgba(56,56,104,0.5)), 
-		url('../images/mainbg.jpg') fixed; 
+		url('../images/hero3.jpg') fixed; 
 		background-repeat: no-repeat;
 		-webkit-background-size: cover; 
 		-moz-background-size: cover; 
