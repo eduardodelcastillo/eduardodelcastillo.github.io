@@ -13,6 +13,33 @@
 body {
 	font-family:  "Gill Sans", Futura,  Arial, Helvetica;
 }
+/*===Added by E====*/
+/*Add background to bar chart*/
+#bar_chart_container {
+  padding-top: 1em;
+  background-color: white;
+}
+/* Change font size of p to make it more readable on homepage for Protect Capital and Cost */
+.bigger_p {
+  font-size: 1.1em;
+}
+#protect_rules {
+  position: relative;
+  width: 80%;
+  left: 10%;
+}
+#protect_rules li {
+  list-style-type: square;
+}
+/*CTA*/
+#cta span {
+  font-size: 1.1em;
+}
+#account_type_section h3 {
+  text-align: center;
+}
+/*===End Add by E====*/
+
 /* BELOW IS TO OVERRIDE "USER AGENT STYLE SHEET" that added a left-padding of 40px --->*/
 ul {
   padding-left: 0;
@@ -222,6 +249,11 @@ ul {
 /* ALWAYS REMEMBER TO ADD IN: <meta name="viewport" content="width=device-width, user-scalable=no">*/
 
 @media (min-width: 300px) {
+/*==Added by E:==*/
+#protect_rules li {
+  text-align: left;
+}
+/*==End Add by E==*/  
     .wrapper.style2 {
       background-image: url('images/vault-small.jpg');
       background-size: 25em, 25em;
