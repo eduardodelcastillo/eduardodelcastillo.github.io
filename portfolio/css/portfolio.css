@@ -1,0 +1,12 @@
+/* portfolio.css */
+h1, h2, h3, p {
+  font-family: Roboto, sans-serif;
+  font-weight: lighter;
+  line-height: 1.5em;
+  letter-spacing: 8px;
+}
+
+body {
+  background:url(../images/profile.png) center center no-repeat fixed;
+  background-size: cover;
+}
