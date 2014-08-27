@@ -7,33 +7,33 @@
 }
 
 h1, h2, h3, p, li, a, footer {
-  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-family:  Helvetica, Lucida Sans Unicode, Lucida Grande, sans-serif;
   line-height: 1.5em;
-  letter-spacing: 0.1em;
-  color: white;
+  color: black;
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 #title {
   position: fixed;
   display: block;
-  width: 90%;
-  left: 5%;
-  top: 20px;
+  width: 100%;
   text-align: center;
-  color: white;
-  z-index: 20;
+  z-index: 50;
+  background-color: white;
+  height: 50px;
 }
 
 #title h1 {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: gray;
+  font-size: 2.2em;
+  color: black;
+  font-weight: 300;
+  text-transform: lowercase;
+  letter-spacing: 0.3em;
 }
+
 
 /* Hero Image */
 .container {
@@ -45,7 +45,8 @@ body {
 }
 
 #hero {
-  background: linear-gradient(10deg, rgba(70,130,180,0.3), rgba(25,25,112,0.2), rgba(0,0,0,0.1)), url(../images/adelaide_normal.png) center center no-repeat scroll;
+  /*linear-gradient(0deg, rgba(176,196,222,0.1), rgba(0,0,128,0.3), rgba(0,0,0,0.0)),*/
+  background: linear-gradient(0deg, rgba(0,0,205,0.2), rgba(176,196,222,0.1), rgba(0,0,0,0.0)), url(../images/adelaide_normal.png) center center no-repeat scroll;
   background-size: cover;
   z-index: 20;
 }
@@ -55,10 +56,10 @@ body {
   position: fixed;
   display: block;
   left: 10%;
-  top: 110px;
+  top: 100px;
   width: 80%;
   text-align: center;
-  height: 280px;
+  height: 320px;
   border: 5px rgba(256,256,256,0.9) solid;
   z-index: 19;
 }
@@ -67,13 +68,16 @@ body {
   display: block;
   position: relative;
   width: 70%;
-  margin: 2.2em auto;
+  margin: 1em auto;
 }
 
 #textbox_content h1, .textbox {
-  padding: 3px 0;
+  padding: 10px 0;
   text-transform: lowercase;
+  font-weight: 300;
   font-size: 2em;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
 #skillset {
@@ -83,7 +87,7 @@ body {
   height: 200px;
   text-align: center;
   z-index: 30;
-  bottom: 60px;  
+  bottom: -20px;  
 }
 
 .smallbox {
@@ -96,11 +100,11 @@ body {
   z-index: 52;
   text-align: center;
   vertical-align: top;
-  background-color: rgba(0,0,0,0.3);
 }
 .smallbox p {
   font-size: 0.8em;
   font-weight: lighter;
+  color: white;
 }
 .label {
   width: 100%;
@@ -127,8 +131,17 @@ body {
   }
 }
 
+@-moz-keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+  to { 
+    background-position: 1300% 600%
+  }
+}
+
 #background {
-  background: linear-gradient(0deg, rgba(70,130,180,0.4), rgba(0,0,0,0.2)), url(../images/background.png) repeat 5% 5%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,128,0.4), rgba(0,0,205,0.4), rgba(0,0,0,0.2)), url(../images/background.png) repeat 5% 5%;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 10;
@@ -137,6 +150,11 @@ body {
   -webkit-animation-duration: 250s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: STAR-MOVE;
+  -moz-animation-duration: 250s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;  
 }
 
 #midground {
@@ -149,6 +167,11 @@ body {
   -webkit-animation-duration: 200s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: STAR-MOVE;
+  -moz-animation-duration: 200s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;  
 }
 
 #foreground {
@@ -161,11 +184,54 @@ body {
   -webkit-animation-duration: 150s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-name: STAR-MOVE;
+  -moz-animation-duration: 150s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;  
 }
 
 /* End Moving Stars animation */
 /*==============================================================================*/
 
+#stalk_container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  vertical-align: center;
+  bottom: 50px;
+  z-index: 143;
+  visibility: hidden;
+}
+
+.stalk_box {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin: 0px 20px;
+  vertical-align: center;
+}
+
+.stalk_box img {
+  opacity: 0.8;
+}
+
+.stalk_box img:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 100px;  
+  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 190, .75);
+     -moz-box-shadow: 0px 0px 5px rgba(255, 255, 190, .75);
+          box-shadow: 0px 0px 5px rgba(255, 255, 190, .75);
+
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1); 
+          transform: scale(1.1);         
+}
 
 /*==============================================================================*/
 /* Menu Bar*/
@@ -174,89 +240,220 @@ body {
   display: block;
   z-index: 50;
   top:-50px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: white;
   padding-top: 18px;
+  height: 50px;
+}
+
+.shadow {
+     -moz-box-shadow: 1px 2px 3px black;
+  -webkit-box-shadow: 1px 2px 3px black;
+          box-shadow: 1px 2px 3px black;
 }
 
 .inner_menu_container {
-  max-width: 95%;
-  position: relative;
+  width: 90%;
+  position: absolute;
   display: block;
+  left: 5%;
   height: 50px;
-  margin: -8px auto;
+  top: 0;
 }
 
 #name {
   display: inline-block;
   max-width: 60%;
   position: relative;
-  padding: 0;
+  padding: 10px;
+  float: left;
 }
 
 #name h1 {
   padding: 0;
   margin-top: 4px;
-  color: white;
+  color: black;
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 #name h1:hover {
-  color: deepskyblue;
-  text-shadow: 0px 0px 2px blue;
+  color: mediumblue;
   cursor: pointer;
+  border-bottom: 2px rgba(0,0,205,0.5) solid;  
 }
 
 .nav_menu {
-  max-width: 60%;
   display: inline-block;
-  position: relative;
+  position: absolute;
   float: right;
-  top: 4px;
+  right: 0;
+  top: 0;
+  padding: 12px;
 }
 
-.nav_menu li {
+.nav_menu li, .nav_menu a {
   text-decoration: none;
   padding: 0 10px;
   float: left;
-  color: white;
+  color: black;
+  font-weight: 300;
+  text-transform: lowercase;
 }
 
 .nav_menu li:hover {
-  border-bottom: 2px rgba(256,256,256,0.5) solid;
-  text-shadow: 0px 0px 2px blue;  
+  border-bottom: 2px rgba(0,0,205,0.5) solid;
   cursor: pointer;
-  color: deepskyblue;
+  color: rgba(0,0,205,0.8);
+}
+
+.nav_menu a:hover {
+  color: rgba(0,0,205,0.8);
 }
 /* End Menu Bar*/
 /*==============================================================================*/
 
+#gap {
+  position: relative;
+  height: 40px;
+}
 
-/* About Me */
-#quote {
-  display: block;
+footer {
   position: fixed;
+  display: block;
   width: 100%;
-  height: 150px;
-  text-align: center;
-  z-index: 10;
-  bottom: -80px;
-  vertical-align: bottom;
+  z-index: 5;
+  height: 90px;
+  background-color: rgba(39,40,34,1); 
+  bottom: 0px; 
 }
 
 #quotebox {
+  display: block;
+  position: absolute;
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
-  z-index: 200;
   padding: 10px 10px;
+  top:0;
+  left: 10%;
 }
 
 #quotebox p {
-  color: gainsboro;
-  font-size: 0.8em;
-  font-weight: lighter;
+  color: gold;
+  font-size: 0.9em;
+  font-family: Georgia, Times, serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
-footer, footer a {
-  color: darkslategray;
-  font-size: 10px;
+#footnotes {
+  bottom: 0;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+}
+
+footer a, footer p {
+  color: slategray;
+  font-size: 8px;
+}
+
+footer h5 {
+  color: slategray;
+  font-size: 12px;
+}
+
+/*==============================================================================*/
+/*==============================================================================*/
+/* ABOUT ME Page */
+/*==============================================================================*/
+/*==============================================================================*/
+#about_hero {
+  /*linear-gradient(0deg, rgba(176,196,222,0.1), rgba(0,0,128,0.3), rgba(0,0,0,0.0)),*/
+  background: url(../images/ed_normal.jpg) center center no-repeat scroll;
+  background-size: cover;
+  z-index: 20;
+}
+
+#about_me {
+  position: fixed;
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  z-index: 100;
+  background-color: rgba(39,40,34,1);
+  border-radius: 5px;
+  top: 20%;
+  left: 10%;
+  padding: 15px;
+}
+
+#about_me p {
+  color: white;
+  font-weight: 300;
+}
+
+#reach_out {
+  color: gold;
+}
+
+#reach_out:hover {
+  color: yellow;
+  cursor: pointer;
+}
+/*==============================================================================*/
+/*==============================================================================*/
+/* My CREATIONS Page */
+/*==============================================================================*/
+/*==============================================================================*/
+#projects_hero {
+  background-color: rgba(256,256,256,0.9);
+  background: linear-gradient(0deg, rgba(0,0,128,0.4), rgba(0,0,0,0.4), rgba(0,0,205,0.2), rgba(0,0,0,0.2)), url(../images/chicagoblur.jpg) center center no-repeat scroll;
+  background-size: cover;
+  text-align: center;
+  z-index: 48;
+}
+
+.projectbox {
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 10px;
+  filter: sepia(40%);
+  -webkit-filter: sepia(40%);
+}
+
+#centup {
+  left: 10%;
+  top: 15%;
+  background: url(../images/centup.jpg) center center no-repeat;
+  background-size: 0%;  
+}
+
+#tablesavvy {
+  left: 60%;
+  top: 15%;
+  background: url(../images/tablesavvy.jpg) center center no-repeat;
+  background-size: 0%;  
+}
+
+#fifthcapital {
+  left: 10%;
+  bottom: 15%;
+  background: url(../images/fifthcapital.jpg) center center no-repeat;
+  background-size: 0%;  
+}
+
+#stamplay {
+  left: 60%;
+  bottom: 15%;
+  background: url(../images/stamplay.jpg) center center no-repeat;
+  background-size: 0%;
 }

@@ -1,6 +1,9 @@
 /* portfolio.js */
+var prefix = ['-moz-','-webkit-','-o-','-ms-'];
 var counter = 0;
 var didOnce = false;
+var stop_scrolling = false;
+var stalk_clicked = false;
 var pic_counter = 1;
 var max_pic = 3;
 var display_delay = 10000; //In milliseconds
@@ -28,16 +31,55 @@ var scrolled = 0;
 var divHeight;
 
 $(document).ready(function() {
+  proxCursor('#stamplay');
+  proxCursor('#centup');
+  proxCursor('#fifthcapital');
+  proxCursor('#tablesavvy');
   //$('#slider_desc').addClass('go');   
   //setInterval(function(){ changeDesc() }, display_delay);
   //setInterval(function(){ changePic()}, display_delay);  
-
+  //console.log(document.body.scrollTop);
   /*Set initial height value of hero image at start */
   divHeight = $(window).height();
   $('#main_hero').css('height',divHeight);
   $('.container').css('height',divHeight);
 
-  console.log('Scroll beginning: ' + scrolled);
+/*================================================*/
+/* Revealing Stalk Me links */
+/*================================================*/
+  $('#stalkme').click(function() {
+    //console.log("Stalk clicked: " + stalk_clicked);
+    if(stalk_clicked) {
+      //console.log("I went inside stalk if.")
+      $('.stalk_box').removeClass('pulse');
+      $('.stalk_box').removeClass('animated');
+      $('#stalk_container').css('visibility', 'hidden');      
+      stalk_clicked = false;     
+    } else {
+      $('#stalk_container').css('visibility', 'visible');
+      $('.stalk_box').addClass('pulse');
+      $('.stalk_box').addClass('animated');
+      stalk_clicked = true;
+    }
+  });
+
+  $('#reach_out').click(function() {
+    //console.log("Stalk clicked: " + stalk_clicked);
+    if(stalk_clicked) {
+      //console.log("I went inside stalk if.")
+      $('.stalk_box').removeClass('pulse');
+      $('.stalk_box').removeClass('animated');
+      $('#stalk_container').css('visibility', 'hidden');      
+      stalk_clicked = false;     
+    } else {
+      $('#stalk_container').css('visibility', 'visible');
+      $('.stalk_box').addClass('pulse');
+      $('.stalk_box').addClass('animated');
+      stalk_clicked = true;
+    }
+  });  
+
+  //console.log('Scroll beginning: ' + scrolled);
   $('#learn_btn').click(function() {
     scrolled = scrolled + 594;
     console.log('Scrolled: ' + scrolled);
@@ -48,44 +90,67 @@ $(document).ready(function() {
   });
 /*================================================*/
 /* Peek feature for Quotes :) */
+/*================================================*/
   $(window).scroll(function(e){
   /* Quote Function */
+    if(!didOnce) {
+      counter = Math.round(Math.random() * quote.length);
+      $('#quotebox p').html(quote[counter]);
+      didOnce = true;
+    }   
   /* Determine if window reached the bottom */
     scrolled = $('body').scrollTop();
-    if(window.innerHeight + document.body.scrollTop > document.body.offsetHeight) {
-      counter = Math.round(Math.random() * quote.length);
-      didOnce = true;
-      do {
-        didOnce = false;         
-        $('#quotebox p').html(quote[counter]); 
-      } while (didOnce);
-    $('body').delay(2000).animate({
-      scrollTop: -scrolled
-    }); 
-    scrolled = 0;       
+    if(document.body.scrollTop == document.body.scrollHeight-window.innerHeight) {
+      console.log('reached bottom');  
+      $('body').delay(4000).animate({
+        scrollTop: -scrolled        
+      }); 
+      scrolled = 0;       
     }
-
+    /* Reset didOnce once window goes back to the top */
+    if(document.body.scrollTop == 0) {
+      didOnce = false;
+    }        
   });
-
+/*================================================*/
+/*  Automatically resize height of main page */
+/*================================================*/
   /* Set this to be the height of #main_hero */
   $(window).resize(function() {
     /* Determine height of window */
     divHeight = $(window).height();
     $('#main_hero').css('height',divHeight);
-    $('.container').css('height',divHeight);   
+    $('.stars').css('height',divHeight);
+    $('#about_hero').css('height',divHeight);
+    $('#projects_hero').css('height',divHeight);     
   });
 
 });
-
-function randomNumber() {
-  counter = Math.round(Math.random() * quote.length);
-  return counter;
-}
-
+/*
 function parallax(){
   var scrolled = $(window).scrollTop();
-  $('#bridge').css('top',-30-(scrolled*0.2)+'px');
-  $('#bridge').css('background-size',70+(scrolled*0.02)+'%');
+  $('#text_box').css('top',-((scrolled -10)*0.1)+'px');
+}
+*/
+
+/*==================================================================================*/
+/* Proximity Cursor - detects position of cursor and changes the div's css property */
+/*==================================================================================*/
+function proxCursor(div) {
+  $(div).bind('proximity', {max:100}, function(e, proximity, distance){    
+    $(div).css('background-size', (proximity * 100)+'%');
+    if(proximity > 0.9) {
+      $(div).css('filter', 'none');      
+      for(var i = 0; i <= prefix.length; i++) {
+        $(div).css(prefix[i] + 'filter', 'sepia(0%)');       
+      }             
+    } else {
+      $(div).css('filter', 'sepia(100%)');
+      for(var i = 0; i <= prefix.length; i++) {      
+        $(div).css(prefix[i]+'filter', 'sepia(100%)');  
+      }    
+    }  
+  });      
 }
 
 function changeDesc() {
