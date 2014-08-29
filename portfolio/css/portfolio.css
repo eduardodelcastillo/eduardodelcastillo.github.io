@@ -7,9 +7,13 @@
 }
 
 h1, h2, h3, p, li, a, footer {
-  font-family:  Helvetica, Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-family:  Lucida Grande, Tahoma, sans-serif;
   line-height: 1.5em;
   color: black;
+}
+
+a:visited {
+  color: #0B5A9C;
 }
 
 body {
@@ -21,7 +25,7 @@ body {
   display: block;
   width: 100%;
   text-align: center;
-  z-index: 50;
+  z-index: 250;
   background-color: white;
   height: 50px;
 }
@@ -31,7 +35,7 @@ body {
   color: black;
   font-weight: 300;
   text-transform: lowercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
 }
 
 
@@ -46,7 +50,7 @@ body {
 
 #hero {
   /*linear-gradient(0deg, rgba(176,196,222,0.1), rgba(0,0,128,0.3), rgba(0,0,0,0.0)),*/
-  background: linear-gradient(0deg, rgba(0,0,205,0.2), rgba(176,196,222,0.1), rgba(0,0,0,0.0)), url(../images/adelaide_normal.png) center center no-repeat scroll;
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,128,0.6), rgba(11,90,156,0.2), rgba(0,0,0,0.0)), url(../images/adelaide_normal.png) center center no-repeat scroll;
   background-size: cover;
   z-index: 20;
 }
@@ -55,13 +59,11 @@ body {
   color: white;
   position: fixed;
   display: block;
-  left: 10%;
+  left: 0;
   top: 100px;
   width: 80%;
-  text-align: center;
   height: 320px;
-  border: 5px rgba(256,256,256,0.9) solid;
-  z-index: 19;
+  z-index: 30;
 }
 
 #textbox_content {
@@ -75,19 +77,20 @@ body {
   padding: 10px 0;
   text-transform: lowercase;
   font-weight: 300;
-  font-size: 2em;
-  color: white;
+  font-size: 2.5em;
+  color: rgba(256,256,256,0.9);
   letter-spacing: 0.1em;
 }
 
 #skillset {
   position: absolute;
-  display: block;
-  width: 100%;
-  height: 200px;
+  display: inline-block;
+  width: 30%;
+  height: auto;
   text-align: center;
   z-index: 30;
-  bottom: -20px;  
+  right: 50px;
+  top: 80px; 
 }
 
 .smallbox {
@@ -104,7 +107,7 @@ body {
 .smallbox p {
   font-size: 0.8em;
   font-weight: lighter;
-  color: white;
+  color: rgba(256,256,256,0.9);
 }
 .label {
   width: 100%;
@@ -141,10 +144,11 @@ body {
 }
 
 #background {
-  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,128,0.4), rgba(0,0,205,0.4), rgba(0,0,0,0.2)), url(../images/background.png) repeat 5% 5%;
+  background: linear-gradient(10deg, rgba(0,0,0,0.4), rgba(0,0,128,0.4), rgba(0,191,255,0.6), rgba(11,90,156,0.4), rgba(11,90,156,0.3), rgba(0,0,0,0.5)), url(../images/background.png) repeat 5% 5%;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 10;
+  height: 100vh;
 
   -webkit-animation-name: STAR-MOVE;
   -webkit-animation-duration: 250s;
@@ -162,6 +166,7 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 11;
+  height: 100vh;
   
   -webkit-animation-name: STAR-MOVE;
   -webkit-animation-duration: 200s;
@@ -179,6 +184,7 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 12;
+  height: 100vh;
   
   -webkit-animation-name: STAR-MOVE;
   -webkit-animation-duration: 150s;
@@ -238,7 +244,7 @@ body {
 #menu {
   position: relative;
   display: block;
-  z-index: 50;
+  z-index: 175;
   top:-50px;
   background-color: white;
   padding-top: 18px;
@@ -258,6 +264,7 @@ body {
   left: 5%;
   height: 50px;
   top: 0;
+  z-index: 175;
 }
 
 #name {
@@ -278,9 +285,9 @@ body {
 }
 
 #name h1:hover {
-  color: mediumblue;
+  color: #0B5A9C;
   cursor: pointer;
-  border-bottom: 2px rgba(0,0,205,0.5) solid;  
+  border-bottom: 2px #0B5A9C solid;  
 }
 
 .nav_menu {
@@ -299,17 +306,19 @@ body {
   color: black;
   font-weight: 300;
   text-transform: lowercase;
+  letter-spacing: 0.05em;
 }
 
-.nav_menu li:hover {
-  border-bottom: 2px rgba(0,0,205,0.5) solid;
+.nav_menu li:hover { 
+  border-bottom: 2px #0B5A9C solid; 
   cursor: pointer;
-  color: rgba(0,0,205,0.8);
+  color: blue;
 }
 
 .nav_menu a:hover {
-  color: rgba(0,0,205,0.8);
-}
+  color: #0B5A9C;
+} 
+
 /* End Menu Bar*/
 /*==============================================================================*/
 
@@ -324,7 +333,7 @@ footer {
   width: 100%;
   z-index: 5;
   height: 90px;
-  background-color: rgba(39,40,34,1); 
+  background: #2D383A;
   bottom: 0px; 
 }
 
@@ -340,7 +349,7 @@ footer {
 }
 
 #quotebox p {
-  color: gold;
+  color: #EBEBEB;
   font-size: 0.9em;
   font-family: Georgia, Times, serif;
   font-weight: 300;
@@ -377,6 +386,7 @@ footer h5 {
   background: url(../images/ed_normal.jpg) center center no-repeat scroll;
   background-size: cover;
   z-index: 20;
+  height: 100vh;
 }
 
 #about_me {
@@ -385,7 +395,8 @@ footer h5 {
   width: 40%;
   height: auto;
   z-index: 100;
-  background-color: rgba(39,40,34,1);
+  /*background-color: rgba(39,40,34,1);*/
+  background: rgba(11,90,156,0.9);
   border-radius: 5px;
   top: 20%;
   left: 10%;
@@ -395,6 +406,7 @@ footer h5 {
 #about_me p {
   color: white;
   font-weight: 300;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.5);  
 }
 
 #reach_out {
@@ -411,49 +423,112 @@ footer h5 {
 /*==============================================================================*/
 /*==============================================================================*/
 #projects_hero {
-  background-color: rgba(256,256,256,0.9);
-  background: linear-gradient(0deg, rgba(0,0,128,0.4), rgba(0,0,0,0.4), rgba(0,0,205,0.2), rgba(0,0,0,0.2)), url(../images/chicagoblur.jpg) center center no-repeat scroll;
+  background-color: #EBEBEB;
+  height: 100vh;
+/* 
+  background: linear-gradient(0deg, rgba(0,0,128,0.4), rgba(0,0,0,0.4), rgba(0,0,205,0.2), rgba(0,0,0,0.2)), url(../images/chicagoblur.jpg) center center no-repeat scroll; 
   background-size: cover;
-  text-align: center;
+*/  
   z-index: 48;
 }
 
-.projectbox {
-  width: 30%;
-  height: 30%;
-  display: inline-block;
+.project_container {
+  width: 100%;
+  height: 75%;
+  display: block;
   position: absolute;
-  vertical-align: middle;
+  top: 15%;
+  left: 0;
+}
+
+.project_visual {
+  display: inline-block;
+  position: relative;
+  width: 42%;
+  height: 100%;
+  margin: 0 5%;
+  box-shadow: 3px 3px 4px #000;  
+  left: 20px;
+}
+
+.project_text_container {
+  display: inline-block;
+  position: relative;
+  width: 42%;
+  vertical-align: top;
+  left: 20px;
+}
+
+.project_title, .project_roles {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.project_title h1 {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #0B5A9C;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project_roles h2, .projectlink {
+  font-size: 1em;
+  padding: 3px 0;
+  color: #0B5A9C;
+  text-transform: uppercase;  
+}
+
+.project_description {
+  font-family:  Lucida Grande, Tahoma, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.3em; 
+  font-weight: lighter; 
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.button_container {
+  display: block;
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 20px;
   text-align: center;
-  border-radius: 10px;
-  filter: sepia(40%);
-  -webkit-filter: sepia(40%);
+  z-index: 74;
 }
 
-#centup {
-  left: 10%;
-  top: 15%;
-  background: url(../images/centup.jpg) center center no-repeat;
-  background-size: 0%;  
+.project_buttons {
+  width: 18%;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background-color: silver;
+  margin: 0 -1px;
 }
 
-#tablesavvy {
-  left: 60%;
-  top: 15%;
-  background: url(../images/tablesavvy.jpg) center center no-repeat;
-  background-size: 0%;  
+.project_buttons li {
+  font-weight: 300;
+  padding-top: 10px;
+  color: darkgray;
+  text-shadow: 0px 1px 0px white; 
 }
 
-#fifthcapital {
-  left: 10%;
-  bottom: 15%;
-  background: url(../images/fifthcapital.jpg) center center no-repeat;
-  background-size: 0%;  
+.project_buttons:hover, .projhover {
+  background-color: #0B5A9C;
+  cursor: pointer;
 }
 
-#stamplay {
-  left: 60%;
-  bottom: 15%;
-  background: url(../images/stamplay.jpg) center center no-repeat;
-  background-size: 0%;
+.project_buttons li:hover, .projtexthover {
+  color: white !important;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.5) !important;   
 }
+
+
