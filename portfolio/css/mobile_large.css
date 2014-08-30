@@ -1,0 +1,167 @@
+/* Mobile Responsive */
+
+#title {
+  height: 45px;
+}
+
+#title h1 {
+  font-size: 1.8em;
+  padding-top: 2px;
+}
+
+#hero {
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,128,0.6), rgba(11,90,156,0.2), rgba(0,0,0,0.0)), url(../images/adelaide_normal.png) center center no-repeat scroll;
+  background-size: cover;
+}
+
+#textbox_content h1, .textbox {
+  padding: 5px 0;
+  font-size: 2em;
+  color: rgba(256,256,256,0.9);
+}
+
+#skillset {
+  right: 40px;
+  top: 70px; 
+}
+
+.smallbox {
+  margin: 0 30px;
+  padding: 20px 30px 20px 30px;
+  width: 120px;
+  height: 120px;
+}
+
+.smallbox p {
+  font-size: 0.7em;
+}
+
+#code > .label {
+  top: 80px;
+}
+
+#stalk_container {
+  height: 50px;
+  bottom: 70px;
+}
+
+.stalk_box {
+  width: 60px;
+  height: 60px;
+  margin: 0px 10px;  
+}
+
+/* ---------------------------------------
+  MENU BAR
+ ----------------------------------------*/
+
+ #menu {
+  padding-top: 0;
+  height: 108px;
+}
+
+.inner_menu_container {
+  height: 108px;
+  text-align: center;
+}
+
+#name {
+  display: block;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+  padding: 0;
+}
+
+.nav_menu {
+  display: block;
+  position: relative;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav_menu li, .nav_menu a {
+  float: none;
+}
+/* End Menu Bar--------------------------------*/
+
+#gap {
+  height: 50px;
+}
+
+footer {
+  height: 110px;
+}
+
+#quotebox {
+  width: 90%;
+  margin: 3px auto;
+  text-align: center;
+  padding: 14px 0px;
+  left: 5%;
+}
+
+#quotebox p {
+  font-size: 0.8em;  
+}
+
+footer h5 {
+  font-size: 10px;
+}
+
+/*==============================================================================*/
+/* ABOUT ME Page */
+/*==============================================================================*/
+#about_hero {
+  background: url(../images/ed_mobile.jpg) center center no-repeat scroll;
+  background-size: cover;
+}
+
+#about_me {
+  width: 50%;
+  height: auto;
+  top: 13%;
+  left: 3%;
+  padding: 5px;
+}
+
+#about_me p {
+  font-size: 0.8em; 
+}
+
+/*==============================================================================*/
+/* My CREATIONS Page */
+/*==============================================================================*/
+.project_visual {
+
+}
+
+.project_text_container {
+  margin: 0 auto;
+}
+
+.project_title h1 {
+  font-size: 1.2em;
+  padding-bottom: 2px;
+}
+
+.project_roles h2, .projectlink {
+  font-size: 0.8em;
+  padding: 3px 0; 
+}
+
+.button_container {
+  width: 100%;
+  left: 0;
+}
+
+.project_buttons {
+  height: 50px;
+}
+
+.project_buttons li {
+  font-size: 0.8em;
+}

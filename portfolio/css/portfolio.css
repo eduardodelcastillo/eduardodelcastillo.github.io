@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, p, li, a, footer {
-  font-family:  Lucida Grande, Tahoma, sans-serif;
+  font-family:  Source Sans Pro, Lucida Grande, Tahoma, sans-serif;
   line-height: 1.5em;
   color: black;
 }
@@ -275,16 +275,15 @@ body {
   float: left;
 }
 
-#name h1 {
+#name a {
   padding: 0;
-  margin-top: 4px;
+  margin-top: 6px;
   color: black;
   text-transform: lowercase;
-  font-weight: 300;
   letter-spacing: 0.1em;
 }
 
-#name h1:hover {
+#name a:hover {
   color: #0B5A9C;
   cursor: pointer;
   border-bottom: 2px #0B5A9C solid;  
@@ -304,20 +303,15 @@ body {
   padding: 0 10px;
   float: left;
   color: black;
-  font-weight: 300;
   text-transform: lowercase;
   letter-spacing: 0.05em;
 }
 
-.nav_menu li:hover { 
+.nav_menu a:hover { 
   border-bottom: 2px #0B5A9C solid; 
   cursor: pointer;
-  color: blue;
-}
-
-.nav_menu a:hover {
   color: #0B5A9C;
-} 
+}
 
 /* End Menu Bar*/
 /*==============================================================================*/
@@ -340,21 +334,21 @@ footer {
 #quotebox {
   display: block;
   position: absolute;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   text-align: center;
-  padding: 10px 10px;
+  padding: 5px 5px;
   top:0;
-  left: 10%;
+  left: 5%;
 }
 
 #quotebox p {
   color: #EBEBEB;
   font-size: 0.9em;
-  font-family: Georgia, Times, serif;
-  font-weight: 300;
+  font-family: Josefin Slab, Georgia, Times, serif;
   letter-spacing: normal;
-  line-height: normal;
+  line-height: 1.3em;
+  text-shadow: 0px -1px 1px black;
 }
 
 #footnotes {
@@ -392,21 +386,21 @@ footer h5 {
 #about_me {
   position: fixed;
   display: inline-block;
-  width: 40%;
+  width: 50%;
   height: auto;
   z-index: 100;
   /*background-color: rgba(39,40,34,1);*/
   background: rgba(11,90,156,0.9);
   border-radius: 5px;
-  top: 20%;
-  left: 10%;
-  padding: 15px;
+  top: 60px;
+  left: 20px;
+  padding: 20px;
 }
 
 #about_me p {
   color: white;
   font-weight: 300;
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.5);  
+  text-shadow: 0px -1px 1px black;  
 }
 
 #reach_out {
@@ -445,18 +439,19 @@ footer h5 {
   display: inline-block;
   position: relative;
   width: 42%;
-  height: 100%;
+  height: 95%;
   margin: 0 5%;
-  box-shadow: 3px 3px 4px #000;  
+  box-shadow: 2px 2px 3px #000;  
   left: 20px;
+  top: 10px;
 }
 
 .project_text_container {
   display: inline-block;
   position: relative;
-  width: 42%;
+  width: 45%;
   vertical-align: top;
-  left: 20px;
+  left: 10px;
 }
 
 .project_title, .project_roles {
@@ -475,18 +470,26 @@ footer h5 {
   letter-spacing: 0.1em;
 }
 
-.project_roles h2, .projectlink {
+.project_roles h2 {
   font-size: 1em;
   padding: 3px 0;
   color: #0B5A9C;
   text-transform: uppercase;  
 }
 
+.projectlink {
+  font-size: 1.2em;
+  color: #0B5A9C;
+  text-transform: uppercase;  
+}
+.projectlink:hover {
+  border-bottom: 2px #0B5A9C solid;
+}
+
 .project_description {
-  font-family:  Lucida Grande, Tahoma, sans-serif;
-  font-size: 0.8em;
-  line-height: 1.3em; 
-  font-weight: lighter; 
+  font-family:  Source Sans Pro, Lucida Grande, Tahoma, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.3em;  
   display: block;
   position: relative;
   max-width: 100%;
@@ -530,5 +533,4 @@ footer h5 {
   color: white !important;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.5) !important;   
 }
-
 

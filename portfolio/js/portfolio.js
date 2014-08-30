@@ -33,10 +33,10 @@ var quote = [ 'You\'re awesome!',
 var scrolled = 0;
 var divHeight;
 
-var tablesavvy_desc = "A thorough UX research was carried out for TableSavvy's exising website. We started with the client interview to know more about what the company does, how they operate and their objectives. We then proceeded to understanding the users' point of view through surveys and contextual inquiry. From this we were able to map out the pain points of using the website and the features that work best. After setting the design requirements and modelling, I used Illustrator to come up with wireframes and visual comp. <br /> <br /> About TableSAVVY: TableSavvy is a restaurant booking website catering to the high end restaurants of Chicago that gives users 30% off their meal while at the same time helping restaurants sell unsold tables during the night. <br />Website: www.tablesavvy.com";
+var tablesavvy_desc = "A thorough UX research was carried out for TableSavvy's exising website. 1) Client interview and site visit to know more about what the company does, their operation and their objectives. 2) User research through surveys and contextual inquiries - where we were able to map out the pain points of using the website. 3) Analysis and synthesis - creating personas, user flows, etc to gain proper understanding of the data gathered. 4) Requirements and modelling that would lead to our design. 5) Wireframing and using Illustrator to visualise our design. <br /> <br /> About: TableSavvy is a booking website catering to high end restaurants of Chicago that gives users 30% off their meal while at the same time helping restaurants sell unsold tables during the night. <br /> <br />Website: www.tablesavvy.com";
 var centup_desc = "CentUp is a social donation platform that lets you reward content builders on the web while at the same time giving something to charities. CentUp needs a mobile app reader where users can easily read articles and donate to the author. My role in this project is research of existing readers out there (eg Digg, Feedly, etc) and proposing the micro-interactions of the reader app. <br /> <br /> Website: www.centup.org";
 var fifthcapital_desc = "Fifth Capital is a wealth management company based in Austin, Texas. Their current website needs a thorough overhaul since it is still using old technologies (eg Flash). With a team of four and after a thorough UX research was done, I was mainly responsible on the visual direction of the website and coding the site in html and css. <br /> <br />Website: www.5thcapital.com <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/fifth_capital/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
-var stamplay_desc = "A team of 7 worked on Stamplay's front page in order to develop the story-stelling of what the company does. My main role is executing the prototype by coding the front page in html, css and jquery. <br /> <br /> About Stamplay: Stamplay is a webapp that allows people to add back-end functions on their websites without coding by simply integrating one of their built in apis. <br />Website: www.stamplay.com <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/stamplay/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
+var stamplay_desc = "A team of 7 worked on Stamplay's front page in order to develop the story-stelling of what the company does. My main role is executing the prototype by coding the front page in html, css and jquery. <br /> <br /> About Stamplay: Stamplay is a webapp that allows people to add back-end functions on their websites without coding by simply integrating one of their built in apis. <br /> <br />Website: www.stamplay.com <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/stamplay/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
 var twincest_desc = "How does one capture and present the essence of a music band? I did this by listening to all of Twincest's music on soundcloud and youtube in order to capture the spirit and style of the music. I then proposed the colour mood and built the website that I think best portray their personality. <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/twincest/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
 
 $(document).ready(function() {
@@ -54,6 +54,14 @@ $(document).ready(function() {
   $('#tablesavvy').addClass('projhover');
   $('#tablesavvy li').addClass('projtexthover');  
   loadProjectContents('tablesavvy');
+
+  // Rename Fifth Capital button when width goes 69px
+  console.log($('#fifthcapital').width());
+  if($('#fifthcapital').width() < 80) {
+    $('#fifthcapital li').html('<br />5th Capital');
+  } else {
+    $('#fifthcapital li').html('<br />Fifth Capital');    
+  }
 
 /*================================================*/
 /* Revealing Stalk Me links */
@@ -137,6 +145,15 @@ $(document).ready(function() {
     $('#projects_hero').css('height',divHeight);    
   });
 
+  // Detect orientation changes of mobile phones
+  window.addEventListener("orientationchange", function() {
+    divHeight = $(window).height();
+    $('#main_hero').css('height',divHeight);
+    $('.stars').css('height',divHeight);
+    $('#about_hero').css('height',divHeight);
+    $('#projects_hero').css('height',divHeight);     
+  });
+
 /*================================================*/
 /*  Change contents of Projects */
 /*================================================*/ 
@@ -210,9 +227,7 @@ function proxCursor(div) {
 function loadProjectContents(button_name) {
 
   // Remove animation classes
-  $('.project_visual').removeClass('fadeIn slower');
-  // Add animation
-  $('.project_visual').addClass('fadeIn slower');   
+  $('.project_visual').removeClass('fadeIn fadeInLeft slower');  
 
   var image_pt1 = 'url(images/';
   var image_pt2 = '.jpg) center center no-repeat';
@@ -247,7 +262,7 @@ function loadProjectContents(button_name) {
       $('.project_roles h2').html('Role: Visual Design, Code (html, css, js)');
       $('.project_description').html(twincest_desc);               
       break;                         
-  }     
+  }       
 }
 
 function changeDesc() {
