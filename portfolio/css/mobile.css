@@ -2,12 +2,12 @@
    Up to 580px */
 
 #title {
-  height: 40px;
+  height: 25px;
 }
 
 #title h1 {
-  font-size: 1.5em;
-  padding-top: 2px;
+  font-size: 1em;
+  padding-top: 1px;
 }
 
 #textbox_content h1, .textbox {
@@ -52,11 +52,12 @@
  ----------------------------------------*/
  #menu {
   padding-top: 0;
-  height: 50px;
+  height: 35px;
+  top: -35px;
 }
 
 .inner_menu_container {
-  height: 50px;
+  height: 35px;
   text-align: center;
 }
 
@@ -69,7 +70,7 @@
   width: 60px;
   position: relative;
   margin: 0 auto;
-  top: 5px;
+  top: 0px;
   text-align: center;
 }
 
@@ -118,7 +119,7 @@
 /* End Menu Bar--------------------------------*/
 
 #gap {
-  height: 60px;
+  height: 70px;
 }
 
 footer {
@@ -131,10 +132,11 @@ footer {
   text-align: center;
   padding: 4px 0px;
   left: 5%;
+  top: 5px;
 }
 
 #quotebox p {
-  font-size: 0.8em;  
+  font-size: 0.7em;  
 }
 
 footer h5 {
@@ -166,32 +168,35 @@ footer h5 {
 /*==============================================================================*/
 .project_container {
   width: 100%;
-  height: auto;
+  height: 90%;
   display: block;
-  position: relative;
-  top: 15%;
+  position: absolute;
+  top: 0;
   left: 0;
 }
 
 .project_visual {
   display: block;
-  position: relative;
+  position: absolute;
   width: 90%;
-  height: 200px;
-  margin: 0 auto;
+  height: 30%;
+  left: 0;
   box-shadow: 1px 1px 2px #000;  
-  top: -18px;
+  top: 13%;
 }
 
 .project_text_container {
-  width: 90%;
-  margin: 0 auto;
-  top: -10px;
+  display: block;
+  width: 95%;
+  height: 40%;
+  left: 2.5%;
+  position: absolute;
+  top: 45%;
 }
 
 .project_title h1 {
   font-size: 1em;
-  padding-bottom: 1px;
+  padding: 2px;
   font-weight: normal;
   text-align: center;
 }
@@ -202,17 +207,21 @@ footer h5 {
   text-align: center;
 }
 
+.project_description {
+  font-size: 0.7em;
+}
+
 .button_container {
   width: 100%;
   left: 0;
-  top: 10px;
+  top: 0px;
 }
 
 .project_buttons {
-  height: 50px;
+  height: 45px;
 }
 
 .project_buttons li {
-  padding-top: 15px;  
+  padding-top: 10px;  
   font-size: 0.7em;
 }
