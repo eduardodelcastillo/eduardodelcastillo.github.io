@@ -40,3 +40,13 @@
 #about_me p {
   font-size: 1em; 
 }
+
+.project_visual {
+  width: 38%;
+  left: 4%;
+}
+
+.project_text_container {
+  width: 38%;
+  left: 4%;
+}

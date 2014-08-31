@@ -1,4 +1,9 @@
-/* Width: 1101px to 1400px; */
+/* Width: 1401px and up */
+
+#hero {
+  background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,128,0.6), rgba(11,90,156,0.2), rgba(0,0,0,0.0)), url(../images/adelaide_wide.png) center center no-repeat scroll;
+  background-size: cover;
+}
 
 #textbox_content h1, .textbox {
   font-size: 2.5em;
@@ -37,7 +42,7 @@
 
 #about_hero {
   /*linear-gradient(0deg, rgba(176,196,222,0.1), rgba(0,0,128,0.3), rgba(0,0,0,0.0)),*/
-  background: url(../images/ed_wide.jpg) center center no-repeat scroll;
+  background: url(../images/ed_wide.jpg) center top no-repeat scroll;
   background-size: cover;
 }
 
@@ -47,4 +52,14 @@
   top: 17%;
   left: 8%;
   padding: 20px;
+}
+
+.project_visual {
+  width: 34%;
+  left: 5%;
+}
+
+.project_text_container {
+  width: 34%;
+  left: 5%;
 }

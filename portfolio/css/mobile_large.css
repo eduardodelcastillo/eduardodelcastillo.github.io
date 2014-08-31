@@ -171,7 +171,7 @@ footer h5 {
 /* My CREATIONS Page */
 /*==============================================================================*/
 .project_visual {
-
+left: 10px;
 }
 
 .project_text_container {
@@ -181,6 +181,7 @@ footer h5 {
 .project_title h1 {
   font-size: 1.2em;
   padding-bottom: 2px;
+  font-weight: normal;
 }
 
 .project_roles h2, .projectlink {
