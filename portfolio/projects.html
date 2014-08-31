@@ -2,17 +2,20 @@
 <html>
 <head>
   <title> Eduardo del Castillo </title>
-  <meta name="viewport" content="width=device-width" />    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <link rel="shortcut icon" href="images/edicon.png">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'> 
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>   
+  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>  
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/hint.css"></link>  
   <link rel="stylesheet" type="text/css" href="css/animate.css" />    
   <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1200px), only screen and (max-width: 1200px)" href="css/portfolio.css" />  
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1401px), only screen and (min-width: 1401px)" href="css/portfolio_wider.css" />   
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1400px), only screen and (max-width: 1400px)" href="css/portfolio_wide.css" />   
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1100px), only screen and (max-width: 1100px)" href="css/portfolio.css" /> 
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 920px), only screen and (max-width: 920px)" href="css/mobile_larger.css" />    
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 680px), only screen and (max-width: 680px)" href="css/mobile_large.css" />   
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 580px), only screen and (max-width: 580px)" href="css/mobile.css" />          
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 580px), only screen and (max-width: 580px)" href="css/mobile.css" />         
 </head>
 <body>
 <header>
@@ -81,9 +84,21 @@
 <div id="menu" class="shadow">
   <div class="inner_menu_container">
     <div id="name">
-      <a href="index.html">
-      <h1>Eduardo del Castillo</h1></a>
+      <a href="index.html">home</a>
     </div>
+    <div id="burger_menu">
+      <div id="burger_icon">
+        <img src="images/burgericon.png" style="width:40px; height:40px; opacity: 0.8;">
+      </div> 
+      <nav id="burger_nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">My Creations</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#" class="stalkme">Stalk Me</a></li>
+        </ul>
+      </nav>           
+    </div>    
     <div class="nav_menu">
       <ul>
         <li><a href="projects.html">My Creations</a></li>
@@ -101,7 +116,7 @@
   </div>
   <div id="footnotes">
     <h5>&#169 2014 Eduardo del Castillo</h5>
-    <p>
+    <p>Icons: Menu designed by <a href="http://www.thenounproject.com/schumanncombo">Richard Schumann</a>
        Responsive Design designed by <a href="http://www.thenounproject.com/garrett.knoll">Garrett Knoll</a>  
        Stylus designed by <a href="http://www.thenounproject.com/buustar">Kitty_Keks</a> from the <a href="http://www.thenounproject.com">Noun Project</a> 
     </p>

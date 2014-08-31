@@ -33,7 +33,7 @@ var quote = [ 'You\'re awesome!',
 var scrolled = 0;
 var divHeight;
 
-var tablesavvy_desc = "A thorough UX research was carried out for TableSavvy's exising website. 1) Client interview and site visit to know more about what the company does, their operation and their objectives. 2) User research through surveys and contextual inquiries - where we were able to map out the pain points of using the website. 3) Analysis and synthesis - creating personas, user flows, etc to gain proper understanding of the data gathered. 4) Requirements and modelling that would lead to our design. 5) Wireframing and using Illustrator to visualise our design. <br /> <br /> About: TableSavvy is a booking website catering to high end restaurants of Chicago that gives users 30% off their meal while at the same time helping restaurants sell unsold tables during the night. <br /> <br />Website: www.tablesavvy.com";
+var tablesavvy_desc = "A thorough UX research was carried out for TableSavvy's exising website. 1) Client interview and site visit to know more about what the company does, their operation and their objectives. 2) User research through surveys and contextual inquiries in order to map out the pain points of using the website. 3) Analysis and synthesis - creating personas, user flows, etc to gain proper understanding of the data gathered. 4) Requirements and modelling that would guide our design. 5) Wireframing and using Illustrator to visualise the design. <br /> <br /> About: TableSavvy is a booking website catering to high end restaurants of Chicago that gives users 30% off their meal while at the same time helping restaurants sell unsold tables during the night. <br /> <br />Website: www.tablesavvy.com";
 var centup_desc = "CentUp is a social donation platform that lets you reward content builders on the web while at the same time giving something to charities. CentUp needs a mobile app reader where users can easily read articles and donate to the author. My role in this project is research of existing readers out there (eg Digg, Feedly, etc) and proposing the micro-interactions of the reader app. <br /> <br /> Website: www.centup.org";
 var fifthcapital_desc = "Fifth Capital is a wealth management company based in Austin, Texas. Their current website needs a thorough overhaul since it is still using old technologies (eg Flash). With a team of four and after a thorough UX research was done, I was mainly responsible on the visual direction of the website and coding the site in html and css. <br /> <br />Website: www.5thcapital.com <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/fifth_capital/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
 var stamplay_desc = "A team of 7 worked on Stamplay's front page in order to develop the story-stelling of what the company does. My main role is executing the prototype by coding the front page in html, css and jquery. <br /> <br /> About Stamplay: Stamplay is a webapp that allows people to add back-end functions on their websites without coding by simply integrating one of their built in apis. <br /> <br />Website: www.stamplay.com <br /> <br /> <br /><a href='http://eduardodelcastillo.github.io/stamplay/index.html' target='_blank' class='projectlink'>SEE IT IN ACTION</a>";
@@ -66,23 +66,7 @@ $(document).ready(function() {
 /*================================================*/
 /* Revealing Stalk Me links */
 /*================================================*/
-  $('#stalkme').click(function() {
-    //console.log("Stalk clicked: " + stalk_clicked);
-    if(stalk_clicked) {
-      //console.log("I went inside stalk if.")
-      $('.stalk_box').removeClass('pulse');
-      $('.stalk_box').removeClass('animated');
-      $('#stalk_container').css('visibility', 'hidden');      
-      stalk_clicked = false;     
-    } else {
-      $('#stalk_container').css('visibility', 'visible');
-      $('.stalk_box').addClass('pulse');
-      $('.stalk_box').addClass('animated');
-      stalk_clicked = true;
-    }
-  });
-
-  $('#reach_out').click(function() {
+  $('.stalkme').click(function() {
     //console.log("Stalk clicked: " + stalk_clicked);
     if(stalk_clicked) {
       //console.log("I went inside stalk if.")
@@ -144,7 +128,6 @@ $(document).ready(function() {
     $('#about_hero').css('height',divHeight);
     $('#projects_hero').css('height',divHeight);    
   });
-
   // Detect orientation changes of mobile phones
   window.addEventListener("orientationchange", function() {
     divHeight = $(window).height();
@@ -191,6 +174,13 @@ $(document).ready(function() {
       $('#'+last_button+' li').removeClass('projtexthover');
     }
     index++;    
+  });
+
+/*================================================*/
+/* Burger Menu */
+/*================================================*/
+  $('#name img').click(function() {
+
   });
 
 });//end main

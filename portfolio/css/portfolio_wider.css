@@ -1,0 +1,50 @@
+/* Width: 1101px to 1400px; */
+
+#textbox_content h1, .textbox {
+  font-size: 2.5em;
+}
+
+#skillset {
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  z-index: 30;
+  right: 30px;
+  top: 100px; 
+}
+
+.smallbox {
+  width: 130px;
+  height: 130px;
+  margin: 0 20px;  
+}
+
+.inner_menu_container {
+  width: 75%;
+  left: 12.5%;
+}
+
+#menu a {
+  font-size: 1.2em;
+}
+
+#quotebox {
+  width: 75%;
+  left: 12.5%;
+}
+
+#about_hero {
+  /*linear-gradient(0deg, rgba(176,196,222,0.1), rgba(0,0,128,0.3), rgba(0,0,0,0.0)),*/
+  background: url(../images/ed_wide.jpg) center center no-repeat scroll;
+  background-size: cover;
+}
+
+#about_me {
+  width: 40%;
+  height: auto;
+  top: 17%;
+  left: 8%;
+  padding: 20px;
+}

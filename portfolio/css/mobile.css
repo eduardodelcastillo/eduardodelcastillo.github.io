@@ -1,7 +1,6 @@
 /* Mobile Responsive 
-up to 600
-601 to 
-*/
+   Up to 580px */
+
 #title {
   height: 40px;
 }
@@ -23,8 +22,8 @@ up to 600
 }
 
 #skillset {
-  right: 40px;
-  top: 70px; 
+  right: 10px;
+  top: 20px; 
 }
 
 .smallbox {
@@ -58,31 +57,64 @@ up to 600
  ----------------------------------------*/
  #menu {
   padding-top: 0;
-  height: 108px;
+  height: 50px;
 }
 
 .inner_menu_container {
-  height: 108px;
+  height: 50px;
   text-align: center;
 }
 
 #name {
+  display: none;
+}
+
+#burger_menu {
   display: block;
-  width: 90%;
+  width: 60px;
   position: relative;
   margin: 0 auto;
-  text-align: center;
-  float: none;
-  padding: 3px 0;
   top: 5px;
+  text-align: center;
+}
+
+#burger_nav ul {
+  list-style: none;
+  position: relative;
+  text-align: center;
+  margin: 8px auto;
+  width: 160px;
+  padding: 0px 0;
+  background-color: white;
+  border-radius: 3px;
+  opacity: 0.8;
+  bottom: 150px;
+  left: -52px;
+  max-height: 0px;
+  overflow: hidden;
+
+  -webkit-transition:max-height 0.4s linear;
+  -moz-transition:max-height 0.4s linear;
+  transition:max-height 0.4s linear;
+}
+
+#burger_menu:hover ul{
+  max-height: 200px;
+}
+
+#burger_nav a {
+  color: black;
+  text-transform: lowercase;
+}
+
+#burger_nav a:hover {
+  color: #0B5A9C;
+  cursor: pointer;
+  border-bottom: 2px #0B5A9C solid; 
 }
 
 .nav_menu {
-  display: block;
-  position: relative;
-  float: none;
-  margin: 0 auto;
-  padding: 0;
+  display: none;
 }
 
 .nav_menu li, .nav_menu a {
@@ -127,7 +159,7 @@ footer h5 {
   height: auto;
   top: 13%;
   left: 3%;
-  padding: 5px;
+  padding: 10px;
 }
 
 #about_me p {
@@ -173,5 +205,6 @@ footer h5 {
 }
 
 .project_buttons li {
-  font-size: 0.6em;
+  padding-top: 13px;  
+  font-size: 0.7em;
 }

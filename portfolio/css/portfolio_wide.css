@@ -1,0 +1,42 @@
+/* Width: 1101px to 1400px; */
+
+#textbox_content h1, .textbox {
+  font-size: 2.5em;
+}
+
+#skillset {
+  position: absolute;
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  text-align: center;
+  z-index: 30;
+  right: 20px;
+  top: 35px; 
+}
+
+.inner_menu_container {
+  width: 80%;
+  left: 10%;
+}
+
+#menu a {
+  font-size: 1.2em;
+}
+
+#quotebox {
+  width: 80%;
+  left: 10%;
+}
+
+#about_me {
+  width: 45%;
+  height: auto;
+  top: 15%;
+  left: 5%;
+  padding: 20px;
+}
+
+#about_me p {
+  font-size: 1em; 
+}
