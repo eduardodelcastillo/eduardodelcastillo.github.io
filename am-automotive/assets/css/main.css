@@ -3950,6 +3950,7 @@ input, select, textarea {
 			#logo_image {
 				position: relative;
 				margin: auto;
+				text-align: center;
 			}
 
 		#call_bar {
@@ -3999,9 +4000,58 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#intro p {
+			#title_container {
+				flex-direction: column;
+			}
+
+				#title_bar {
+					width: 100%;
+				}
+
+				#title_bar h1 {
+					font-size: 2em;
+				}
+
+				#title_bar h2 {
+					font-size: 1.5em;
+				}
+
+				#title_bar h3 {
 					font-size: 1em;
 				}
+
+				#logo_image {
+					width: 100%;
+				}
+
+					#logo_image img {
+						width: 100px;
+						height: 100px;
+						text-align: center;
+					}
+
+			#call_bar {
+				display: flex;
+				flex-direction: column;
+				top: -1em;
+			}
+
+				#side_title {
+					margin-top: -2.5em;
+				}
+
+				#side_title h1 {
+					font-size: 2em;
+				}
+
+				#call_attention {
+					font-size: 1.25em;
+					height: 1.5em;
+				}			
+
+					#intro p {
+						font-size: 1em;
+					}
 
 			}
 
